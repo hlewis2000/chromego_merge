@@ -25,19 +25,11 @@
 
 ## 订阅链接分享
 ### 不套warp版本（clashmeta）
-**不含hysteria2节点**
-```
-https://raw.githubusercontent.com/hlewis2000/chromego_merge/main/sub/merged_proxies.yaml
-```
 **含hysteria2节点(节点最全）**
 ```
 https://raw.githubusercontent.com/hlewis2000/chromego_merge/main/sub/merged_proxies_new.yaml
 ```
 ### 套warp版本（clashmeta)
-**不含hysteria2节点**
-```
-https://raw.githubusercontent.com/hlewis2000/chromego_merge/main/sub/merged_warp_proxies.yaml
-```
 **含hysteria2节点(节点最全）**
 ```
 https://raw.githubusercontent.com/hlewis2000/chromego_merge/main/sub/merged_proxies_new.yaml
