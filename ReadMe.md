@@ -25,20 +25,17 @@
 
 ## 订阅链接分享
 ### 不套warp版本（clashmeta）
-**含hysteria2节点(节点最全）**
 ```
 https://raw.githubusercontent.com/hlewis2000/chromego_merge/main/sub/merged_proxies_new.yaml
 ```
 ### 套warp版本（clashmeta)
-**含hysteria2节点(节点最全）**
 ```
-https://raw.githubusercontent.com/hlewis2000/chromego_merge/main/sub/merged_proxies_new.yaml
+https://raw.githubusercontent.com/hlewis2000/chromego_merge/main/sub/merged_warp_proxies_new.yaml
 ```
 ### 通用链接 （shadowrocket和nekoray）
 ```
 https://raw.githubusercontent.com/hlewis2000/chromego_merge/main/sub/shadowrocket_base64.txt
 ```
-
 ### sing-box订阅链接
 ```
 https://sbsub.henhao.cf/config/https://raw.githubusercontent.com/hlewis2000/chromego_merge/main/sub/shadowrocket_base64.txt/&file=2
