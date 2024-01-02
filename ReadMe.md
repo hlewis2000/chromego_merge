@@ -58,14 +58,3 @@ https://sbsub.henhao.cf/config/https://raw.githubusercontent.com/hlewis2000/chro
 ### macos
 - [clashx.meta](https://github.com/MetaCubeX/ClashX.Meta/releases)
 - [clash verge](https://github.com/zzzgydi/clash-verge/releases) 
-- shadowrocket
-
-## 致谢
-- [Alvin9999](https://github.com/Alvin9999/pac2/tree/master)
-- [sing-box-subscribe](https://github.com/Toperlock/sing-box-subscribe)
-
-区域设置代码截取自:
-- [chromegopacs](https://github.com/markbang/chromegopacs)
-
-
-
