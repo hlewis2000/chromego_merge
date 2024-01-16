@@ -1,7 +1,7 @@
 import requests
 import os
 
-url = "https://sbsub.henhao.cf/config/https:/raw.githubusercontent.com/hlewis2000/chromego_merge/main/sub/shadowrocket_base64.txt"
+url = "https://sbsub.henhao.cf/config/https:/raw.githubusercontent.com/hlewis2000/chromego_merge/main/sub/shadowrocket_base64.txt/&file=2"
 output_folder = "sub"
 output_filename = "sb.json"
 
