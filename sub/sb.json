@@ -90,7 +90,9 @@
       "outbounds": [
         "auto",
         "direct",
-        "BwwdERAK_shadowsocks",
+        "🇨🇦 Canada_vless_0",
+        "🇨🇦 Canada_vless_02",
+        "🇰🇭 OKHX0uPc_shadowsocks",
         "🇨🇦 Canada_vless_2",
         "🇨🇦 Canada_vless_3",
         "🇹🇼 Taiwan_hy_6",
@@ -105,7 +107,7 @@
         "🇺🇸 United States_hysteria2_1",
         "🇺🇸 United States_hysteria2_2",
         "🇺🇸 United States_hysteria2_3",
-        "🇨🇦 Canada_vless_0",
+        "🇨🇦 Canada_vless_03",
         "🇨🇦 Canada_vless_1",
         "🇨🇦 Canada_vless_32"
       ]
@@ -304,12 +306,14 @@
       "tag": "✈️ 其他节点",
       "type": "selector",
       "outbounds": [
-        "BwwdERAK_shadowsocks",
+        "🇨🇦 Canada_vless_0",
+        "🇨🇦 Canada_vless_02",
+        "🇰🇭 OKHX0uPc_shadowsocks",
         "🇨🇦 Canada_vless_2",
         "🇨🇦 Canada_vless_3",
         "🇫🇷 France_hy2_7",
         "🇫🇷 France_hysteria_0",
-        "🇨🇦 Canada_vless_0",
+        "🇨🇦 Canada_vless_03",
         "🇨🇦 Canada_vless_1",
         "🇨🇦 Canada_vless_32",
         "proxy"
@@ -335,7 +339,9 @@
       "tag": "auto",
       "type": "urltest",
       "outbounds": [
-        "BwwdERAK_shadowsocks",
+        "🇨🇦 Canada_vless_0",
+        "🇨🇦 Canada_vless_02",
+        "🇰🇭 OKHX0uPc_shadowsocks",
         "🇨🇦 Canada_vless_2",
         "🇨🇦 Canada_vless_3",
         "🇹🇼 Taiwan_hy_6",
@@ -350,7 +356,7 @@
         "🇺🇸 United States_hysteria2_1",
         "🇺🇸 United States_hysteria2_2",
         "🇺🇸 United States_hysteria2_3",
-        "🇨🇦 Canada_vless_0",
+        "🇨🇦 Canada_vless_03",
         "🇨🇦 Canada_vless_1",
         "🇨🇦 Canada_vless_32"
       ],
@@ -371,7 +377,55 @@
       "tag": "block"
     },
     {
-      "tag": "BwwdERAK_shadowsocks",
+      "tag": "🇨🇦 Canada_vless_0",
+      "type": "vless",
+      "server": "dongtaiwang3.com",
+      "server_port": 443,
+      "uuid": "a9202ced-3185-489c-8b28-74e9a00d894d",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "dongtaiwang.dtku47.xyz",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/eobjws",
+        "headers": {
+          "Host": "dongtaiwang.dtku47.xyz"
+        }
+      }
+    },
+    {
+      "tag": "🇨🇦 Canada_vless_02",
+      "type": "vless",
+      "server": "dongtaiwang2.com",
+      "server_port": 443,
+      "uuid": "a9202ced-3185-489c-8b28-74e9a00d894d",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "dongtaiwang.dtku47.xyz",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/eobjws",
+        "headers": {
+          "Host": "dongtaiwang.dtku47.xyz"
+        }
+      }
+    },
+    {
+      "tag": "🇰🇭 OKHX0uPc_shadowsocks",
       "type": "shadowsocks",
       "server": "167.160.90.252",
       "server_port": 8883,
@@ -639,7 +693,7 @@
       }
     },
     {
-      "tag": "🇨🇦 Canada_vless_0",
+      "tag": "🇨🇦 Canada_vless_03",
       "type": "vless",
       "server": "dongtaiwang3.com",
       "server_port": 443,
