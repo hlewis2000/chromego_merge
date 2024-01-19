@@ -92,7 +92,7 @@
         "direct",
         "🇨🇦 Canada_vless_0",
         "🇨🇦 Canada_vless_02",
-        "MzWWKlea_shadowsocks",
+        "lkFP84Js_shadowsocks",
         "🇨🇦 Canada_vless_2",
         "🇨🇦 Canada_vless_3",
         "🇹🇼 Taiwan_hy_6",
@@ -308,7 +308,7 @@
       "outbounds": [
         "🇨🇦 Canada_vless_0",
         "🇨🇦 Canada_vless_02",
-        "MzWWKlea_shadowsocks",
+        "lkFP84Js_shadowsocks",
         "🇨🇦 Canada_vless_2",
         "🇨🇦 Canada_vless_3",
         "🇫🇷 France_hy2_7",
@@ -341,7 +341,7 @@
       "outbounds": [
         "🇨🇦 Canada_vless_0",
         "🇨🇦 Canada_vless_02",
-        "MzWWKlea_shadowsocks",
+        "lkFP84Js_shadowsocks",
         "🇨🇦 Canada_vless_2",
         "🇨🇦 Canada_vless_3",
         "🇹🇼 Taiwan_hy_6",
@@ -425,7 +425,7 @@
       }
     },
     {
-      "tag": "MzWWKlea_shadowsocks",
+      "tag": "lkFP84Js_shadowsocks",
       "type": "shadowsocks",
       "server": "167.160.90.252",
       "server_port": 8883,
@@ -674,8 +674,8 @@
     {
       "tag": "🇺🇸 United States_hysteria2_3",
       "type": "hysteria2",
-      "server": "64.110.25.11",
-      "server_port": 33337,
+      "server": "108.181.24.77",
+      "server_port": 18775,
       "password": "dongtaiwang.com",
       "up_mbps": 10,
       "down_mbps": 100,
