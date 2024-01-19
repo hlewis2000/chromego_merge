@@ -92,7 +92,7 @@
         "direct",
         "🇨🇦 Canada_vless_0",
         "🇨🇦 Canada_vless_02",
-        "d5dl6SB6_shadowsocks",
+        "33uA3GK6_shadowsocks",
         "🇨🇦 Canada_vless_2",
         "🇨🇦 Canada_vless_3",
         "🇹🇼 Taiwan_hy_6",
@@ -308,7 +308,7 @@
       "outbounds": [
         "🇨🇦 Canada_vless_0",
         "🇨🇦 Canada_vless_02",
-        "d5dl6SB6_shadowsocks",
+        "33uA3GK6_shadowsocks",
         "🇨🇦 Canada_vless_2",
         "🇨🇦 Canada_vless_3",
         "🇫🇷 France_hy2_7",
@@ -341,7 +341,7 @@
       "outbounds": [
         "🇨🇦 Canada_vless_0",
         "🇨🇦 Canada_vless_02",
-        "d5dl6SB6_shadowsocks",
+        "33uA3GK6_shadowsocks",
         "🇨🇦 Canada_vless_2",
         "🇨🇦 Canada_vless_3",
         "🇹🇼 Taiwan_hy_6",
@@ -425,7 +425,7 @@
       }
     },
     {
-      "tag": "d5dl6SB6_shadowsocks",
+      "tag": "33uA3GK6_shadowsocks",
       "type": "shadowsocks",
       "server": "167.160.90.252",
       "server_port": 8883,
@@ -501,21 +501,17 @@
       "tag": "🇫🇷 France_hy2_7",
       "type": "hysteria2",
       "server": "51.158.54.46",
-      "server_port": 23400,
-      "password": "d64df453-34f0-4fa8-b115-e6805f6d54db",
+      "server_port": 44550,
+      "password": "dongtaiwang.com",
       "up_mbps": 10,
       "down_mbps": 100,
       "tls": {
         "enabled": true,
-        "server_name": "",
+        "server_name": "bing.com",
         "insecure": true,
         "alpn": [
           "h3"
         ]
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "d64df453-34f0-4fa8-b115-e6805f6d54db"
       }
     },
     {
