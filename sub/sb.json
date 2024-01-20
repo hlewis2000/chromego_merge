@@ -91,9 +91,9 @@
         "auto",
         "direct",
         "🇨🇦 Canada_vless_0",
-        "🇨🇦 Canada_vless_02",
-        "K9hWvB54_shadowsocks",
-        "🇨🇦 Canada_vless_2",
+        "🇺🇸 United States_vless_0",
+        "🇲🇨 bMCDWLj9_shadowsocks",
+        "🇺🇸 United States_vless_2",
         "🇨🇦 Canada_vless_3",
         "🇹🇼 Taiwan_hy_6",
         "🇫🇷 France_hy2_7",
@@ -107,9 +107,9 @@
         "🇺🇸 United States_hysteria2_1",
         "🇺🇸 United States_hysteria2_2",
         "🇺🇸 United States_hysteria2_3",
-        "🇨🇦 Canada_vless_03",
+        "🇨🇦 Canada_vless_02",
         "🇨🇦 Canada_vless_1",
-        "🇨🇦 Canada_vless_32"
+        "🇺🇸 United States_vless_3"
       ]
     },
     {
@@ -291,6 +291,8 @@
       "tag": "🇺🇸 美国节点",
       "type": "selector",
       "outbounds": [
+        "🇺🇸 United States_vless_0",
+        "🇺🇸 United States_vless_2",
         "🇺🇸 United States_hy2_8",
         "🇺🇸 United States_hysteria_1",
         "🇺🇸 United States_hysteria_2",
@@ -299,6 +301,7 @@
         "🇺🇸 United States_hysteria2_1",
         "🇺🇸 United States_hysteria2_2",
         "🇺🇸 United States_hysteria2_3",
+        "🇺🇸 United States_vless_3",
         "proxy"
       ]
     },
@@ -307,15 +310,12 @@
       "type": "selector",
       "outbounds": [
         "🇨🇦 Canada_vless_0",
-        "🇨🇦 Canada_vless_02",
-        "K9hWvB54_shadowsocks",
-        "🇨🇦 Canada_vless_2",
+        "🇲🇨 bMCDWLj9_shadowsocks",
         "🇨🇦 Canada_vless_3",
         "🇫🇷 France_hy2_7",
         "🇫🇷 France_hysteria_0",
-        "🇨🇦 Canada_vless_03",
+        "🇨🇦 Canada_vless_02",
         "🇨🇦 Canada_vless_1",
-        "🇨🇦 Canada_vless_32",
         "proxy"
       ]
     },
@@ -340,9 +340,9 @@
       "type": "urltest",
       "outbounds": [
         "🇨🇦 Canada_vless_0",
-        "🇨🇦 Canada_vless_02",
-        "K9hWvB54_shadowsocks",
-        "🇨🇦 Canada_vless_2",
+        "🇺🇸 United States_vless_0",
+        "🇲🇨 bMCDWLj9_shadowsocks",
+        "🇺🇸 United States_vless_2",
         "🇨🇦 Canada_vless_3",
         "🇹🇼 Taiwan_hy_6",
         "🇫🇷 France_hy2_7",
@@ -356,9 +356,9 @@
         "🇺🇸 United States_hysteria2_1",
         "🇺🇸 United States_hysteria2_2",
         "🇺🇸 United States_hysteria2_3",
-        "🇨🇦 Canada_vless_03",
+        "🇨🇦 Canada_vless_02",
         "🇨🇦 Canada_vless_1",
-        "🇨🇦 Canada_vless_32"
+        "🇺🇸 United States_vless_3"
       ],
       "url": "http://www.gstatic.com/generate_204",
       "interval": "10m",
@@ -401,9 +401,9 @@
       }
     },
     {
-      "tag": "🇨🇦 Canada_vless_02",
+      "tag": "🇺🇸 United States_vless_0",
       "type": "vless",
-      "server": "dongtaiwang2.com",
+      "server": "cu.dongtaiwang3.com",
       "server_port": 443,
       "uuid": "a9202ced-3185-489c-8b28-74e9a00d894d",
       "packet_encoding": "xudp",
@@ -425,7 +425,7 @@
       }
     },
     {
-      "tag": "K9hWvB54_shadowsocks",
+      "tag": "🇲🇨 bMCDWLj9_shadowsocks",
       "type": "shadowsocks",
       "server": "167.160.90.252",
       "server_port": 8883,
@@ -433,9 +433,9 @@
       "password": "lolvK9uAhEDYTMuqCRblBg=="
     },
     {
-      "tag": "🇨🇦 Canada_vless_2",
+      "tag": "🇺🇸 United States_vless_2",
       "type": "vless",
-      "server": "dongtaiwang2.com",
+      "server": "cu.dongtaiwang3.com",
       "server_port": 443,
       "uuid": "ffb15cd2-0521-49de-b8aa-fb15d58c8075",
       "packet_encoding": "xudp",
@@ -459,7 +459,7 @@
     {
       "tag": "🇨🇦 Canada_vless_3",
       "type": "vless",
-      "server": "dongtaiwang3.com",
+      "server": "dongtaiwang2.com",
       "server_port": 443,
       "uuid": "869d601c-9e4c-4e83-b816-bb553234aaea",
       "packet_encoding": "xudp",
@@ -689,7 +689,7 @@
       }
     },
     {
-      "tag": "🇨🇦 Canada_vless_03",
+      "tag": "🇨🇦 Canada_vless_02",
       "type": "vless",
       "server": "dongtaiwang3.com",
       "server_port": 443,
@@ -715,7 +715,7 @@
     {
       "tag": "🇨🇦 Canada_vless_1",
       "type": "vless",
-      "server": "dongtaiwang3.com",
+      "server": "dongtaiwang2.com",
       "server_port": 443,
       "uuid": "0773256c-d020-436d-afea-6eee7cb6c872",
       "packet_encoding": "xudp",
@@ -737,9 +737,9 @@
       }
     },
     {
-      "tag": "🇨🇦 Canada_vless_32",
+      "tag": "🇺🇸 United States_vless_3",
       "type": "vless",
-      "server": "dongtaiwang2.com",
+      "server": "cu.dongtaiwang3.com",
       "server_port": 443,
       "uuid": "0773256c-d020-436d-afea-6eee7cb6c872",
       "packet_encoding": "xudp",
