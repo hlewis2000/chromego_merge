@@ -36,9 +36,9 @@ proxies:
     headers:
       host: dongtaiwang.dtku47.xyz
   client-fingerprint: chrome
-- name: France_vless_02
+- name: United States_vless_02
   type: vless
-  server: fr.freeh1.xyz
+  server: cu.dongtaiwang3.com
   port: 443
   uuid: 7b671cd2-233d-406c-88da-1c687727dc52
   tls: true
@@ -82,9 +82,9 @@ proxies:
     headers:
       host: v2ray3.freegradely.xyz
   client-fingerprint: chrome
-- name: France_vless_31
+- name: United States_vless_31
   type: vless
-  server: fr.freeh1.xyz
+  server: cu.dongtaiwang3.com
   port: 443
   uuid: 7b671cd2-233d-406c-88da-1c687727dc52
   tls: true
@@ -262,10 +262,10 @@ proxy-groups:
   - 🔯 故障转移
   - DIRECT
   - Canada_vless_01
-  - France_vless_02
+  - United States_vless_02
   - United States_ss_11
   - United States_vless_21
-  - France_vless_31
+  - United States_vless_31
   - None_vmess_41
   - Canada_vmess_51
   - Taiwan_hysteria_61
@@ -286,10 +286,10 @@ proxy-groups:
   - ♻️ 自动选择
   - 🔯 故障转移
   - Canada_vless_01
-  - France_vless_02
+  - United States_vless_02
   - United States_ss_11
   - United States_vless_21
-  - France_vless_31
+  - United States_vless_31
   - None_vmess_41
   - Canada_vmess_51
   - Taiwan_hysteria_61
@@ -311,10 +311,10 @@ proxy-groups:
   tolerance: 50
   proxies:
   - Canada_vless_01
-  - France_vless_02
+  - United States_vless_02
   - United States_ss_11
   - United States_vless_21
-  - France_vless_31
+  - United States_vless_31
   - None_vmess_41
   - Canada_vmess_51
   - Taiwan_hysteria_61
@@ -335,10 +335,10 @@ proxy-groups:
   interval: 120
   proxies:
   - Canada_vless_01
-  - France_vless_02
+  - United States_vless_02
   - United States_ss_11
   - United States_vless_21
-  - France_vless_31
+  - United States_vless_31
   - None_vmess_41
   - Canada_vmess_51
   - Taiwan_hysteria_61
@@ -372,10 +372,10 @@ proxy-groups:
   - ♻️ 自动选择
   - 🔯 故障转移
   - Canada_vless_01
-  - France_vless_02
+  - United States_vless_02
   - United States_ss_11
   - United States_vless_21
-  - France_vless_31
+  - United States_vless_31
   - None_vmess_41
   - Canada_vmess_51
   - Taiwan_hysteria_61
