@@ -92,7 +92,7 @@
         "direct",
         "🇨🇦 Canada_vless_0",
         "🇺🇸 United States_vless_0",
-        "aH1PBfFC_shadowsocks",
+        "🇰🇵 ptgjJKPL_shadowsocks",
         "🇺🇸 United States_vless_2",
         "🇺🇸 United States_vless_3",
         "🇹🇼 Taiwan_hy_6",
@@ -310,7 +310,7 @@
       "type": "selector",
       "outbounds": [
         "🇨🇦 Canada_vless_0",
-        "aH1PBfFC_shadowsocks",
+        "🇰🇵 ptgjJKPL_shadowsocks",
         "🇫🇷 France_hy2_7",
         "🇫🇷 France_hysteria_0",
         "🇫🇷 France_hysteria2_0",
@@ -341,7 +341,7 @@
       "outbounds": [
         "🇨🇦 Canada_vless_0",
         "🇺🇸 United States_vless_0",
-        "aH1PBfFC_shadowsocks",
+        "🇰🇵 ptgjJKPL_shadowsocks",
         "🇺🇸 United States_vless_2",
         "🇺🇸 United States_vless_3",
         "🇹🇼 Taiwan_hy_6",
@@ -425,7 +425,7 @@
       }
     },
     {
-      "tag": "aH1PBfFC_shadowsocks",
+      "tag": "🇰🇵 ptgjJKPL_shadowsocks",
       "type": "shadowsocks",
       "server": "167.160.90.252",
       "server_port": 8883,
