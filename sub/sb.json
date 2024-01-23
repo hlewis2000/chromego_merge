@@ -91,10 +91,10 @@
         "auto",
         "direct",
         "🇨🇦 Canada_vless_0",
-        "🇫🇷 France_vless_0",
-        "🇬🇭 qdN2GHL1_shadowsocks",
+        "🇺🇸 United States_vless_0",
+        "2gsVusJT_shadowsocks",
         "🇺🇸 United States_vless_2",
-        "🇫🇷 France_vless_3",
+        "🇺🇸 United States_vless_3",
         "🇹🇼 Taiwan_hy_6",
         "🇫🇷 France_hy2_7",
         "🇺🇸 United States_hy2_8",
@@ -107,9 +107,9 @@
         "🇺🇸 United States_hysteria2_1",
         "🇺🇸 United States_hysteria2_2",
         "🇺🇸 United States_hysteria2_3",
-        "🇫🇷 France_vless_02",
+        "🇨🇦 Canada_vless_02",
         "🇨🇦 Canada_vless_1",
-        "🇺🇸 United States_vless_3"
+        "🇺🇸 United States_vless_32"
       ]
     },
     {
@@ -291,7 +291,10 @@
       "tag": "🇺🇸 美国节点",
       "type": "selector",
       "outbounds": [
+        "🇺🇸 United States_vless_0",
+        "2gsVusJT_shadowsocks",
         "🇺🇸 United States_vless_2",
+        "🇺🇸 United States_vless_3",
         "🇺🇸 United States_hy2_8",
         "🇺🇸 United States_hysteria_1",
         "🇺🇸 United States_hysteria_2",
@@ -299,7 +302,7 @@
         "🇺🇸 United States_hysteria2_1",
         "🇺🇸 United States_hysteria2_2",
         "🇺🇸 United States_hysteria2_3",
-        "🇺🇸 United States_vless_3",
+        "🇺🇸 United States_vless_32",
         "proxy"
       ]
     },
@@ -308,13 +311,10 @@
       "type": "selector",
       "outbounds": [
         "🇨🇦 Canada_vless_0",
-        "🇫🇷 France_vless_0",
-        "🇬🇭 qdN2GHL1_shadowsocks",
-        "🇫🇷 France_vless_3",
         "🇫🇷 France_hy2_7",
         "🇫🇷 France_hysteria_0",
         "🇫🇷 France_hysteria2_0",
-        "🇫🇷 France_vless_02",
+        "🇨🇦 Canada_vless_02",
         "🇨🇦 Canada_vless_1",
         "proxy"
       ]
@@ -340,10 +340,10 @@
       "type": "urltest",
       "outbounds": [
         "🇨🇦 Canada_vless_0",
-        "🇫🇷 France_vless_0",
-        "🇬🇭 qdN2GHL1_shadowsocks",
+        "🇺🇸 United States_vless_0",
+        "2gsVusJT_shadowsocks",
         "🇺🇸 United States_vless_2",
-        "🇫🇷 France_vless_3",
+        "🇺🇸 United States_vless_3",
         "🇹🇼 Taiwan_hy_6",
         "🇫🇷 France_hy2_7",
         "🇺🇸 United States_hy2_8",
@@ -356,9 +356,9 @@
         "🇺🇸 United States_hysteria2_1",
         "🇺🇸 United States_hysteria2_2",
         "🇺🇸 United States_hysteria2_3",
-        "🇫🇷 France_vless_02",
+        "🇨🇦 Canada_vless_02",
         "🇨🇦 Canada_vless_1",
-        "🇺🇸 United States_vless_3"
+        "🇺🇸 United States_vless_32"
       ],
       "url": "http://www.gstatic.com/generate_204",
       "interval": "10m",
@@ -401,9 +401,9 @@
       }
     },
     {
-      "tag": "🇫🇷 France_vless_0",
+      "tag": "🇺🇸 United States_vless_0",
       "type": "vless",
-      "server": "fr.freeh1.xyz",
+      "server": "cu.dongtaiwang3.com",
       "server_port": 443,
       "uuid": "7b671cd2-233d-406c-88da-1c687727dc52",
       "packet_encoding": "xudp",
@@ -425,7 +425,7 @@
       }
     },
     {
-      "tag": "🇬🇭 qdN2GHL1_shadowsocks",
+      "tag": "2gsVusJT_shadowsocks",
       "type": "shadowsocks",
       "server": "167.160.90.252",
       "server_port": 8883,
@@ -457,9 +457,9 @@
       }
     },
     {
-      "tag": "🇫🇷 France_vless_3",
+      "tag": "🇺🇸 United States_vless_3",
       "type": "vless",
-      "server": "fr.freeh1.xyz",
+      "server": "cu.dongtaiwang3.com",
       "server_port": 443,
       "uuid": "7b671cd2-233d-406c-88da-1c687727dc52",
       "packet_encoding": "xudp",
@@ -689,9 +689,9 @@
       }
     },
     {
-      "tag": "🇫🇷 France_vless_02",
+      "tag": "🇨🇦 Canada_vless_02",
       "type": "vless",
-      "server": "fr.freeh1.xyz",
+      "server": "dongtaiwang3.com",
       "server_port": 443,
       "uuid": "7b671cd2-233d-406c-88da-1c687727dc52",
       "packet_encoding": "xudp",
@@ -737,7 +737,7 @@
       }
     },
     {
-      "tag": "🇺🇸 United States_vless_3",
+      "tag": "🇺🇸 United States_vless_32",
       "type": "vless",
       "server": "cu.dongtaiwang3.com",
       "server_port": 443,
