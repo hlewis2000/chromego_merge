@@ -92,8 +92,8 @@
         "direct",
         "🇨🇦 Canada_vless_0",
         "🇺🇸 United States_vless_0",
-        "ujkLgyuf_shadowsocks",
-        "qDYUn9XM_shadowsocks",
+        "h9qsf3OE_shadowsocks",
+        "rXU1Dn7W_shadowsocks",
         "🇺🇸 United States_vless_2",
         "🇺🇸 United States_vless_3",
         "🇹🇼 Taiwan_hy_6",
@@ -311,8 +311,8 @@
       "type": "selector",
       "outbounds": [
         "🇨🇦 Canada_vless_0",
-        "ujkLgyuf_shadowsocks",
-        "qDYUn9XM_shadowsocks",
+        "h9qsf3OE_shadowsocks",
+        "rXU1Dn7W_shadowsocks",
         "🇫🇷 France_hy2_7",
         "🇫🇷 France_hysteria_0",
         "🇫🇷 France_hysteria2_0",
@@ -343,8 +343,8 @@
       "outbounds": [
         "🇨🇦 Canada_vless_0",
         "🇺🇸 United States_vless_0",
-        "ujkLgyuf_shadowsocks",
-        "qDYUn9XM_shadowsocks",
+        "h9qsf3OE_shadowsocks",
+        "rXU1Dn7W_shadowsocks",
         "🇺🇸 United States_vless_2",
         "🇺🇸 United States_vless_3",
         "🇹🇼 Taiwan_hy_6",
@@ -428,7 +428,7 @@
       }
     },
     {
-      "tag": "ujkLgyuf_shadowsocks",
+      "tag": "h9qsf3OE_shadowsocks",
       "type": "shadowsocks",
       "server": "62.210.103.0",
       "server_port": 12299,
@@ -436,7 +436,7 @@
       "password": "guXsVF5bET8TgJV0HYUYew=="
     },
     {
-      "tag": "qDYUn9XM_shadowsocks",
+      "tag": "rXU1Dn7W_shadowsocks",
       "type": "shadowsocks",
       "server": "167.160.90.252",
       "server_port": 8883,
