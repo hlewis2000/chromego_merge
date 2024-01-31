@@ -90,9 +90,9 @@
       "outbounds": [
         "auto",
         "direct",
-        "🇮🇳 INj8T5ZN_shadowsocks",
-        "🇲🇱 R9ciPMLJ_shadowsocks",
-        "ipMqOn8e_shadowsocks",
+        "QtpR4RL6_shadowsocks",
+        "JiBz6uZE_shadowsocks",
+        "DIpPS1JL_shadowsocks",
         "🇹🇼 Taiwan_hy_6",
         "🇫🇷 France_hy2_7",
         "🇺🇸 United States_hy2_8",
@@ -299,9 +299,9 @@
       "tag": "✈️ 其他节点",
       "type": "selector",
       "outbounds": [
-        "🇮🇳 INj8T5ZN_shadowsocks",
-        "🇲🇱 R9ciPMLJ_shadowsocks",
-        "ipMqOn8e_shadowsocks",
+        "QtpR4RL6_shadowsocks",
+        "JiBz6uZE_shadowsocks",
+        "DIpPS1JL_shadowsocks",
         "🇫🇷 France_hy2_7",
         "🇫🇷 France_hysteria_0",
         "🇫🇷 France_hysteria2_0",
@@ -329,9 +329,9 @@
       "tag": "auto",
       "type": "urltest",
       "outbounds": [
-        "🇮🇳 INj8T5ZN_shadowsocks",
-        "🇲🇱 R9ciPMLJ_shadowsocks",
-        "ipMqOn8e_shadowsocks",
+        "QtpR4RL6_shadowsocks",
+        "JiBz6uZE_shadowsocks",
+        "DIpPS1JL_shadowsocks",
         "🇹🇼 Taiwan_hy_6",
         "🇫🇷 France_hy2_7",
         "🇺🇸 United States_hy2_8",
@@ -362,7 +362,7 @@
       "tag": "block"
     },
     {
-      "tag": "🇮🇳 INj8T5ZN_shadowsocks",
+      "tag": "QtpR4RL6_shadowsocks",
       "type": "shadowsocks",
       "server": "uydyfkghjrtcsdx.youcansee.cyou",
       "server_port": 20167,
@@ -370,7 +370,7 @@
       "password": "81416f3c-5b00-4056-8e5f-d7ffdd884bf4"
     },
     {
-      "tag": "🇲🇱 R9ciPMLJ_shadowsocks",
+      "tag": "JiBz6uZE_shadowsocks",
       "type": "shadowsocks",
       "server": "service.ouluyun9803.com",
       "server_port": 26601,
@@ -378,7 +378,7 @@
       "password": "f665c5d0-77c0-4196-bc8d-f0450e9c665b"
     },
     {
-      "tag": "ipMqOn8e_shadowsocks",
+      "tag": "DIpPS1JL_shadowsocks",
       "type": "shadowsocks",
       "server": "service.ouluyun9803.com",
       "server_port": 26668,
