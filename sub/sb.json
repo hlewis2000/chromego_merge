@@ -90,9 +90,9 @@
       "outbounds": [
         "auto",
         "direct",
-        "wkBN7uYD_shadowsocks",
-        "GqRuWYxE_shadowsocks",
-        "91jtGwrw_shadowsocks",
+        "🇮🇳 INj8T5ZN_shadowsocks",
+        "🇲🇱 R9ciPMLJ_shadowsocks",
+        "ipMqOn8e_shadowsocks",
         "🇹🇼 Taiwan_hy_6",
         "🇫🇷 France_hy2_7",
         "🇺🇸 United States_hy2_8",
@@ -299,9 +299,9 @@
       "tag": "✈️ 其他节点",
       "type": "selector",
       "outbounds": [
-        "wkBN7uYD_shadowsocks",
-        "GqRuWYxE_shadowsocks",
-        "91jtGwrw_shadowsocks",
+        "🇮🇳 INj8T5ZN_shadowsocks",
+        "🇲🇱 R9ciPMLJ_shadowsocks",
+        "ipMqOn8e_shadowsocks",
         "🇫🇷 France_hy2_7",
         "🇫🇷 France_hysteria_0",
         "🇫🇷 France_hysteria2_0",
@@ -329,9 +329,9 @@
       "tag": "auto",
       "type": "urltest",
       "outbounds": [
-        "wkBN7uYD_shadowsocks",
-        "GqRuWYxE_shadowsocks",
-        "91jtGwrw_shadowsocks",
+        "🇮🇳 INj8T5ZN_shadowsocks",
+        "🇲🇱 R9ciPMLJ_shadowsocks",
+        "ipMqOn8e_shadowsocks",
         "🇹🇼 Taiwan_hy_6",
         "🇫🇷 France_hy2_7",
         "🇺🇸 United States_hy2_8",
@@ -362,7 +362,7 @@
       "tag": "block"
     },
     {
-      "tag": "wkBN7uYD_shadowsocks",
+      "tag": "🇮🇳 INj8T5ZN_shadowsocks",
       "type": "shadowsocks",
       "server": "uydyfkghjrtcsdx.youcansee.cyou",
       "server_port": 20167,
@@ -370,7 +370,7 @@
       "password": "81416f3c-5b00-4056-8e5f-d7ffdd884bf4"
     },
     {
-      "tag": "GqRuWYxE_shadowsocks",
+      "tag": "🇲🇱 R9ciPMLJ_shadowsocks",
       "type": "shadowsocks",
       "server": "service.ouluyun9803.com",
       "server_port": 26601,
@@ -378,7 +378,7 @@
       "password": "f665c5d0-77c0-4196-bc8d-f0450e9c665b"
     },
     {
-      "tag": "91jtGwrw_shadowsocks",
+      "tag": "ipMqOn8e_shadowsocks",
       "type": "shadowsocks",
       "server": "service.ouluyun9803.com",
       "server_port": 26668,
@@ -444,7 +444,7 @@
       "tag": "🇹🇼 Taiwan_hy_9",
       "type": "hysteria",
       "server": "www.dtku50.xyz",
-      "server_port": 32408,
+      "server_port": 18470,
       "up_mbps": 50,
       "down_mbps": 80,
       "auth_str": "",
@@ -580,7 +580,7 @@
       "tag": "🇺🇸 United States_hysteria2_3",
       "type": "hysteria2",
       "server": "108.181.24.77",
-      "server_port": 18775,
+      "server_port": 43656,
       "password": "dongtaiwang.com",
       "up_mbps": 10,
       "down_mbps": 100,
