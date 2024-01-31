@@ -90,12 +90,9 @@
       "outbounds": [
         "auto",
         "direct",
-        "🇨🇦 Canada_vless_0",
-        "🇨🇦 Canada_vless_02",
-        "🇺🇸 United States_vless_1",
-        "🇺🇸 United States_vless_12",
-        "None_vless_2",
-        "🇨🇦 Canada_vless_3",
+        "wkBN7uYD_shadowsocks",
+        "GqRuWYxE_shadowsocks",
+        "91jtGwrw_shadowsocks",
         "🇹🇼 Taiwan_hy_6",
         "🇫🇷 France_hy2_7",
         "🇺🇸 United States_hy2_8",
@@ -107,10 +104,7 @@
         "🇫🇷 France_hysteria2_0",
         "🇺🇸 United States_hysteria2_1",
         "🇫🇷 France_hysteria2_2",
-        "🇺🇸 United States_hysteria2_3",
-        "🇨🇦 Canada_vless_03",
-        "🇨🇦 Canada_vless_1",
-        "🇺🇸 United States_vless_3"
+        "🇺🇸 United States_hysteria2_3"
       ]
     },
     {
@@ -292,15 +286,12 @@
       "tag": "🇺🇸 美国节点",
       "type": "selector",
       "outbounds": [
-        "🇺🇸 United States_vless_1",
-        "🇺🇸 United States_vless_12",
         "🇺🇸 United States_hy2_8",
         "🇺🇸 United States_hysteria_1",
         "🇺🇸 United States_hysteria_2",
         "🇺🇸 United States_hysteria_3",
         "🇺🇸 United States_hysteria2_1",
         "🇺🇸 United States_hysteria2_3",
-        "🇺🇸 United States_vless_3",
         "proxy"
       ]
     },
@@ -308,16 +299,13 @@
       "tag": "✈️ 其他节点",
       "type": "selector",
       "outbounds": [
-        "🇨🇦 Canada_vless_0",
-        "🇨🇦 Canada_vless_02",
-        "None_vless_2",
-        "🇨🇦 Canada_vless_3",
+        "wkBN7uYD_shadowsocks",
+        "GqRuWYxE_shadowsocks",
+        "91jtGwrw_shadowsocks",
         "🇫🇷 France_hy2_7",
         "🇫🇷 France_hysteria_0",
         "🇫🇷 France_hysteria2_0",
         "🇫🇷 France_hysteria2_2",
-        "🇨🇦 Canada_vless_03",
-        "🇨🇦 Canada_vless_1",
         "proxy"
       ]
     },
@@ -341,12 +329,9 @@
       "tag": "auto",
       "type": "urltest",
       "outbounds": [
-        "🇨🇦 Canada_vless_0",
-        "🇨🇦 Canada_vless_02",
-        "🇺🇸 United States_vless_1",
-        "🇺🇸 United States_vless_12",
-        "None_vless_2",
-        "🇨🇦 Canada_vless_3",
+        "wkBN7uYD_shadowsocks",
+        "GqRuWYxE_shadowsocks",
+        "91jtGwrw_shadowsocks",
         "🇹🇼 Taiwan_hy_6",
         "🇫🇷 France_hy2_7",
         "🇺🇸 United States_hy2_8",
@@ -358,10 +343,7 @@
         "🇫🇷 France_hysteria2_0",
         "🇺🇸 United States_hysteria2_1",
         "🇫🇷 France_hysteria2_2",
-        "🇺🇸 United States_hysteria2_3",
-        "🇨🇦 Canada_vless_03",
-        "🇨🇦 Canada_vless_1",
-        "🇺🇸 United States_vless_3"
+        "🇺🇸 United States_hysteria2_3"
       ],
       "url": "http://www.gstatic.com/generate_204",
       "interval": "10m",
@@ -380,148 +362,28 @@
       "tag": "block"
     },
     {
-      "tag": "🇨🇦 Canada_vless_0",
-      "type": "vless",
-      "server": "23.227.38.51",
-      "server_port": 443,
-      "uuid": "7b671cd2-233d-406c-88da-1c687727dc52",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "insecure": true,
-        "server_name": "fr.freeh1.xyz",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/kfhaws",
-        "headers": {
-          "Host": "fr.freeh1.xyz"
-        }
-      }
+      "tag": "wkBN7uYD_shadowsocks",
+      "type": "shadowsocks",
+      "server": "uydyfkghjrtcsdx.youcansee.cyou",
+      "server_port": 20167,
+      "method": "chacha20-ietf-poly1305",
+      "password": "81416f3c-5b00-4056-8e5f-d7ffdd884bf4"
     },
     {
-      "tag": "🇨🇦 Canada_vless_02",
-      "type": "vless",
-      "server": "23.227.39.51",
-      "server_port": 443,
-      "uuid": "7b671cd2-233d-406c-88da-1c687727dc52",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "insecure": true,
-        "server_name": "fr.freeh1.xyz",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/kfhaws",
-        "headers": {
-          "Host": "fr.freeh1.xyz"
-        }
-      }
+      "tag": "GqRuWYxE_shadowsocks",
+      "type": "shadowsocks",
+      "server": "service.ouluyun9803.com",
+      "server_port": 26601,
+      "method": "chacha20-ietf-poly1305",
+      "password": "f665c5d0-77c0-4196-bc8d-f0450e9c665b"
     },
     {
-      "tag": "🇺🇸 United States_vless_1",
-      "type": "vless",
-      "server": "172.67.70.101",
-      "server_port": 443,
-      "uuid": "7b671cd2-233d-406c-88da-1c687727dc52",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "insecure": true,
-        "server_name": "fr.freeh1.xyz",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/kfhaws",
-        "headers": {
-          "Host": "fr.freeh1.xyz"
-        }
-      }
-    },
-    {
-      "tag": "🇺🇸 United States_vless_12",
-      "type": "vless",
-      "server": "172.67.70.103",
-      "server_port": 443,
-      "uuid": "7b671cd2-233d-406c-88da-1c687727dc52",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "insecure": true,
-        "server_name": "fr.freeh1.xyz",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/kfhaws",
-        "headers": {
-          "Host": "fr.freeh1.xyz"
-        }
-      }
-    },
-    {
-      "tag": "None_vless_2",
-      "type": "vless",
-      "server": "198.41.220.101",
-      "server_port": 443,
-      "uuid": "ffb15cd2-0521-49de-b8aa-fb15d58c8075",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "insecure": true,
-        "server_name": "v2ray3.freegradely.xyz",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/bqbows",
-        "headers": {
-          "Host": "v2ray3.freegradely.xyz"
-        }
-      }
-    },
-    {
-      "tag": "🇨🇦 Canada_vless_3",
-      "type": "vless",
-      "server": "23.227.39.53",
-      "server_port": 443,
-      "uuid": "7b671cd2-233d-406c-88da-1c687727dc52",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "insecure": true,
-        "server_name": "fr.freeh1.xyz",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/kfhaws",
-        "headers": {
-          "Host": "fr.freeh1.xyz"
-        }
-      }
+      "tag": "91jtGwrw_shadowsocks",
+      "type": "shadowsocks",
+      "server": "service.ouluyun9803.com",
+      "server_port": 26668,
+      "method": "chacha20-ietf-poly1305",
+      "password": "f665c5d0-77c0-4196-bc8d-f0450e9c665b"
     },
     {
       "tag": "🇹🇼 Taiwan_hy_6",
@@ -729,78 +591,6 @@
         "alpn": [
           "h3"
         ]
-      }
-    },
-    {
-      "tag": "🇨🇦 Canada_vless_03",
-      "type": "vless",
-      "server": "23.227.39.53",
-      "server_port": 443,
-      "uuid": "ffb15cd2-0521-49de-b8aa-fb15d58c8075",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "insecure": false,
-        "server_name": "v2ray3.freegradely.xyz",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/bqbows",
-        "headers": {
-          "Host": "v2ray3.freegradely.xyz"
-        }
-      }
-    },
-    {
-      "tag": "🇨🇦 Canada_vless_1",
-      "type": "vless",
-      "server": "23.227.38.111",
-      "server_port": 443,
-      "uuid": "0773256c-d020-436d-afea-6eee7cb6c872",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "insecure": false,
-        "server_name": "xray1.freegradely.xyz",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/bodhws",
-        "headers": {
-          "Host": "xray1.freegradely.xyz"
-        }
-      }
-    },
-    {
-      "tag": "🇺🇸 United States_vless_3",
-      "type": "vless",
-      "server": "172.67.71.81",
-      "server_port": 443,
-      "uuid": "0773256c-d020-436d-afea-6eee7cb6c872",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "insecure": false,
-        "server_name": "xray1.freegradely.xyz",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/bodhws",
-        "headers": {
-          "Host": "xray1.freegradely.xyz"
-        }
       }
     }
   ],
