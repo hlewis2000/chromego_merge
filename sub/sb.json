@@ -90,9 +90,7 @@
       "outbounds": [
         "auto",
         "direct",
-        "QtpR4RL6_shadowsocks",
-        "JiBz6uZE_shadowsocks",
-        "DIpPS1JL_shadowsocks",
+        "🇺🇸 United States_vless_0",
         "🇹🇼 Taiwan_hy_6",
         "🇫🇷 France_hy2_7",
         "🇺🇸 United States_hy2_8",
@@ -286,6 +284,7 @@
       "tag": "🇺🇸 美国节点",
       "type": "selector",
       "outbounds": [
+        "🇺🇸 United States_vless_0",
         "🇺🇸 United States_hy2_8",
         "🇺🇸 United States_hysteria_1",
         "🇺🇸 United States_hysteria_2",
@@ -299,9 +298,6 @@
       "tag": "✈️ 其他节点",
       "type": "selector",
       "outbounds": [
-        "QtpR4RL6_shadowsocks",
-        "JiBz6uZE_shadowsocks",
-        "DIpPS1JL_shadowsocks",
         "🇫🇷 France_hy2_7",
         "🇫🇷 France_hysteria_0",
         "🇫🇷 France_hysteria2_0",
@@ -329,9 +325,7 @@
       "tag": "auto",
       "type": "urltest",
       "outbounds": [
-        "QtpR4RL6_shadowsocks",
-        "JiBz6uZE_shadowsocks",
-        "DIpPS1JL_shadowsocks",
+        "🇺🇸 United States_vless_0",
         "🇹🇼 Taiwan_hy_6",
         "🇫🇷 France_hy2_7",
         "🇺🇸 United States_hy2_8",
@@ -362,28 +356,27 @@
       "tag": "block"
     },
     {
-      "tag": "QtpR4RL6_shadowsocks",
-      "type": "shadowsocks",
-      "server": "uydyfkghjrtcsdx.youcansee.cyou",
-      "server_port": 20167,
-      "method": "chacha20-ietf-poly1305",
-      "password": "81416f3c-5b00-4056-8e5f-d7ffdd884bf4"
-    },
-    {
-      "tag": "JiBz6uZE_shadowsocks",
-      "type": "shadowsocks",
-      "server": "service.ouluyun9803.com",
-      "server_port": 26601,
-      "method": "chacha20-ietf-poly1305",
-      "password": "f665c5d0-77c0-4196-bc8d-f0450e9c665b"
-    },
-    {
-      "tag": "DIpPS1JL_shadowsocks",
-      "type": "shadowsocks",
-      "server": "service.ouluyun9803.com",
-      "server_port": 26668,
-      "method": "chacha20-ietf-poly1305",
-      "password": "f665c5d0-77c0-4196-bc8d-f0450e9c665b"
+      "tag": "🇺🇸 United States_vless_0",
+      "type": "vless",
+      "server": "108.181.5.130",
+      "server_port": 17346,
+      "uuid": "7fc88217-1b18-49b7-bc50-bfe379dc6bf7",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "d1.awsstatic.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "O5x9mSGdETFh_ql4m_2dPEUNBVwCly9XSi9pu1teLls",
+          "short_id": "6ba85179e30d4fc2"
+        }
+      }
     },
     {
       "tag": "🇹🇼 Taiwan_hy_6",
