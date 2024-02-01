@@ -90,8 +90,10 @@
       "outbounds": [
         "auto",
         "direct",
+        "🇫🇷 France_vless_0",
         "🇺🇸 United States_vless_0",
         "🇺🇸 United States_vless_02",
+        "🇫🇷 France_vless_1",
         "🇹🇼 Taiwan_hy_6",
         "🇫🇷 France_hy2_7",
         "🇺🇸 United States_hy2_8",
@@ -300,6 +302,8 @@
       "tag": "✈️ 其他节点",
       "type": "selector",
       "outbounds": [
+        "🇫🇷 France_vless_0",
+        "🇫🇷 France_vless_1",
         "🇫🇷 France_hy2_7",
         "🇫🇷 France_hysteria_0",
         "🇫🇷 France_hysteria2_0",
@@ -327,8 +331,10 @@
       "tag": "auto",
       "type": "urltest",
       "outbounds": [
+        "🇫🇷 France_vless_0",
         "🇺🇸 United States_vless_0",
         "🇺🇸 United States_vless_02",
+        "🇫🇷 France_vless_1",
         "🇹🇼 Taiwan_hy_6",
         "🇫🇷 France_hy2_7",
         "🇺🇸 United States_hy2_8",
@@ -357,6 +363,29 @@
     {
       "type": "block",
       "tag": "block"
+    },
+    {
+      "tag": "🇫🇷 France_vless_0",
+      "type": "vless",
+      "server": "51.159.103.141",
+      "server_port": 12207,
+      "uuid": "63925418-7ae3-4da1-9e73-fb3fc5af6fdb",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "s0.awsstatic.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "A-DHKUq8W8KZKM1gr8xcKCoqKSct73NtdSjUZMhFcEM",
+          "short_id": "6ba85179e30d4fc2"
+        }
+      }
     },
     {
       "tag": "🇺🇸 United States_vless_0",
@@ -400,6 +429,29 @@
         "reality": {
           "enabled": true,
           "public_key": "O5x9mSGdETFh_ql4m_2dPEUNBVwCly9XSi9pu1teLls",
+          "short_id": "6ba85179e30d4fc2"
+        }
+      }
+    },
+    {
+      "tag": "🇫🇷 France_vless_1",
+      "type": "vless",
+      "server": "51.159.103.141",
+      "server_port": 12207,
+      "uuid": "63925418-7ae3-4da1-9e73-fb3fc5af6fdb",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "s0.awsstatic.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "A-DHKUq8W8KZKM1gr8xcKCoqKSct73NtdSjUZMhFcEM",
           "short_id": "6ba85179e30d4fc2"
         }
       }
