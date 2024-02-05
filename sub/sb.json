@@ -90,8 +90,8 @@
       "outbounds": [
         "auto",
         "direct",
-        "🇺🇸 United States_tuic_0",
-        "🇫🇷 France_tuic_1",
+        "🇫🇷 France_tuic_0",
+        "🇺🇸 United States_tuic_1",
         "🇳🇱 Netherlands_tuic_2",
         "🇫🇷 France_tuic_3",
         "🇫🇷 France_tuic_4",
@@ -291,7 +291,7 @@
       "tag": "🇺🇸 美国节点",
       "type": "selector",
       "outbounds": [
-        "🇺🇸 United States_tuic_0",
+        "🇺🇸 United States_tuic_1",
         "🇺🇸 United States_hy2_8",
         "🇺🇸 United States_hysteria_1",
         "🇺🇸 United States_hysteria_2",
@@ -307,7 +307,7 @@
       "tag": "✈️ 其他节点",
       "type": "selector",
       "outbounds": [
-        "🇫🇷 France_tuic_1",
+        "🇫🇷 France_tuic_0",
         "🇳🇱 Netherlands_tuic_2",
         "🇫🇷 France_tuic_3",
         "🇫🇷 France_tuic_4",
@@ -339,8 +339,8 @@
       "tag": "auto",
       "type": "urltest",
       "outbounds": [
-        "🇺🇸 United States_tuic_0",
-        "🇫🇷 France_tuic_1",
+        "🇫🇷 France_tuic_0",
+        "🇺🇸 United States_tuic_1",
         "🇳🇱 Netherlands_tuic_2",
         "🇫🇷 France_tuic_3",
         "🇫🇷 France_tuic_4",
@@ -377,11 +377,11 @@
       "tag": "block"
     },
     {
-      "tag": "🇺🇸 United States_tuic_0",
+      "tag": "🇫🇷 France_tuic_0",
       "type": "tuic",
-      "server": "109.104.152.4",
-      "server_port": 443,
-      "uuid": "9ec44c8c-5dc0-4c92-a7ed-5422b0ac1913",
+      "server": "62.210.103.14",
+      "server_port": 44556,
+      "uuid": "0d9d053c-81c8-4f26-9b5c-dff313dfdd70",
       "password": "dongtaiwang.com",
       "congestion_control": "bbr",
       "udp_relay_mode": "native",
@@ -395,11 +395,11 @@
       }
     },
     {
-      "tag": "🇫🇷 France_tuic_1",
+      "tag": "🇺🇸 United States_tuic_1",
       "type": "tuic",
-      "server": "62.210.103.14",
-      "server_port": 44556,
-      "uuid": "0d9d053c-81c8-4f26-9b5c-dff313dfdd70",
+      "server": "109.104.152.4",
+      "server_port": 443,
+      "uuid": "9ec44c8c-5dc0-4c92-a7ed-5422b0ac1913",
       "password": "dongtaiwang.com",
       "congestion_control": "bbr",
       "udp_relay_mode": "native",
