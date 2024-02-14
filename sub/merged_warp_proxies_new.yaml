@@ -23,25 +23,23 @@ proxies:
   - 1.1.1.1
   - 8.8.8.8
   dialer-proxy: WARP前置节点
-- name: United States_tuic_01
-  type: tuic
-  server: 195.137.220.189
-  port: 33445
-  udp: true
-  uuid: 983a85bd-8fae-45d2-a702-5d00a383763e
+- name: United States_hysteria2_01
+  type: hysteria2
+  server: 64.31.55.30
+  port: 20011
   password: dongtaiwang.com
   alpn:
   - h3
-  disable-sni: true
-  reduce-rtt: true
-  udp-relay-mode: native
-  congestion-controller: bbr
+  sni: bing.com
+  skip-cert-verify: true
+  up: 11 Mbps
+  down: 55 Mbps
 - name: United States_tuic_11
   type: tuic
-  server: 74.63.249.229
-  port: 443
+  server: 109.104.152.144
+  port: 44411
   udp: true
-  uuid: 9a6140f4-abd8-4ece-aa0e-4f14556de56b
+  uuid: 7bda06fd-e4af-4115-8aa3-f021832cfa78
   password: dongtaiwang.com
   alpn:
   - h3
@@ -49,12 +47,38 @@ proxies:
   reduce-rtt: true
   udp-relay-mode: native
   congestion-controller: bbr
-- name: United States_tuic_21
+- name: Taiwan_vmess_12
+  type: vmess
+  server: www.dtku40.xyz
+  port: 18840
+  cipher: auto
+  uuid: afb1ad76-0f6f-4cb8-983a-95f5b4708321
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  servername: ''
+  network: ws
+  ws-opts:
+    path: /9tEYTPFN/
+- name: United States_vmess_21
+  type: vmess
+  server: 108.181.5.18
+  port: 40010
+  cipher: auto
+  uuid: 44bee251-795d-4d7a-8ecb-c4322aec05be
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  servername: ''
+  network: ws
+  ws-opts:
+    path: /xajVDSGJ/
+- name: United States_tuic_31
   type: tuic
-  server: 108.181.2.158
-  port: 33440
+  server: 109.104.152.101
+  port: 22288
   udp: true
-  uuid: 996c2970-ec1c-4659-9c5f-b3609c42a764
+  uuid: 7bda06fd-e4af-4115-8aa3-f021832cfa78
   password: dongtaiwang.com
   alpn:
   - h3
@@ -62,51 +86,1664 @@ proxies:
   reduce-rtt: true
   udp-relay-mode: native
   congestion-controller: bbr
-- name: Hong Kong_vless_31
+- name: United States_vless_41
   type: vless
-  server: 92.118.205.66
-  port: 10081
+  server: 109.104.152.101
+  port: 11111
   udp: true
-  uuid: 7c009b14-ceb0-4373-9504-ab2a9ca2354a
+  uuid: 9cc39477-0d85-4419-84d4-fb7fc77668b3
   tls: true
-  servername: images-na.ssl-images-amazon.com
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc
+  servername: m.media-amazon.com
+  flow: xtls-rprx-vision
+  network: tcp
   reality-opts:
-    public-key: JMHogufiGO132mtTq26O34ssU8rjCkUcFC98PSeMF3A
+    public-key: yKXmLTmXAi-BHBg3JpCz-NWUmVcKlfm7iMmVoq7YQx0
     short-id: 6ba85179e30d4fc2
   client-fingerprint: chrome
-- name: Hong Kong_vless_41
+- name: None_vless_51
   type: vless
-  server: 92.118.205.66
-  port: 10081
-  udp: true
-  uuid: 7c009b14-ceb0-4373-9504-ab2a9ca2354a
+  server: 198.41.193.226
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
   tls: true
-  servername: images-na.ssl-images-amazon.com
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc
-  reality-opts:
-    public-key: JMHogufiGO132mtTq26O34ssU8rjCkUcFC98PSeMF3A
-    short-id: 6ba85179e30d4fc2
-  client-fingerprint: chrome
-- name: Hong Kong_vless_51
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: None_vless_52
   type: vless
-  server: 92.118.205.66
-  port: 10081
-  udp: true
-  uuid: 7c009b14-ceb0-4373-9504-ab2a9ca2354a
+  server: 104.27.97.91
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
   tls: true
-  servername: images-na.ssl-images-amazon.com
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc
-  reality-opts:
-    public-key: JMHogufiGO132mtTq26O34ssU8rjCkUcFC98PSeMF3A
-    short-id: 6ba85179e30d4fc2
-  client-fingerprint: chrome
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: United States_vless_53
+  type: vless
+  server: 108.162.196.107
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: None_vless_54
+  type: vless
+  server: 104.22.46.253
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: France_vless_55
+  type: vless
+  server: 173.245.49.56
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: None_vless_56
+  type: vless
+  server: 198.41.195.168
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: United States_vless_57
+  type: vless
+  server: 103.21.244.189
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: None_vless_58
+  type: vless
+  server: 104.21.35.228
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: None_vless_59
+  type: vless
+  server: 162.159.38.71
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: None_vless_510
+  type: vless
+  server: 104.19.7.150
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: United States_vless_511
+  type: vless
+  server: 108.162.196.74
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: None_vless_512
+  type: vless
+  server: 104.18.9.181
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: United States_vless_513
+  type: vless
+  server: 190.93.245.188
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: None_vless_514
+  type: vless
+  server: 198.41.218.199
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: None_vless_515
+  type: vless
+  server: 104.18.110.163
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: Costa Rica_vless_516
+  type: vless
+  server: 190.93.246.114
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: United States_vless_517
+  type: vless
+  server: 103.21.244.236
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: None_vless_518
+  type: vless
+  server: 162.159.24.166
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: None_vless_519
+  type: vless
+  server: 104.25.69.69
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: None_vless_520
+  type: vless
+  server: 104.16.196.143
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: United States_vless_521
+  type: vless
+  server: 103.21.244.162
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: United States_vless_522
+  type: vless
+  server: 172.66.138.14
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: United States_vless_523
+  type: vless
+  server: 172.64.49.33
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: None_vless_524
+  type: vless
+  server: 104.25.113.186
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: None_vless_525
+  type: vless
+  server: 104.20.5.9
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: None_vless_526
+  type: vless
+  server: 104.25.211.145
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: United States_vless_527
+  type: vless
+  server: 172.67.209.51
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: None_vless_528
+  type: vless
+  server: 104.18.141.86
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: Netherlands_vless_529
+  type: vless
+  server: 188.114.97.19
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: None_vless_530
+  type: vless
+  server: 104.27.16.75
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: None_vless_531
+  type: vless
+  server: 104.18.95.234
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: None_vless_532
+  type: vless
+  server: 198.41.202.98
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: None_vless_533
+  type: vless
+  server: 162.159.24.244
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: None_vless_534
+  type: vless
+  server: 104.24.132.228
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: None_vless_535
+  type: vless
+  server: 198.41.209.249
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: None_vless_536
+  type: vless
+  server: 104.24.88.199
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: United States_vless_537
+  type: vless
+  server: 103.21.244.248
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: None_vless_538
+  type: vless
+  server: 104.20.253.93
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: United States_vless_539
+  type: vless
+  server: 173.245.58.18
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: None_vless_540
+  type: vless
+  server: 104.17.11.252
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: None_vless_541
+  type: vless
+  server: 104.24.18.7
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: None_vless_542
+  type: vless
+  server: 104.16.38.162
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: United States_vless_543
+  type: vless
+  server: 108.162.194.144
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: United States_vless_544
+  type: vless
+  server: 190.93.244.218
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: None_vless_545
+  type: vless
+  server: 104.19.45.11
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: Netherlands_vless_546
+  type: vless
+  server: 188.114.96.211
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: United States_vless_547
+  type: vless
+  server: 172.67.152.22
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: None_vless_548
+  type: vless
+  server: 104.16.75.128
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: None_vless_549
+  type: vless
+  server: 198.41.202.169
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: None_vless_550
+  type: vless
+  server: 104.24.57.248
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: France_vless_551
+  type: vless
+  server: 173.245.49.207
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: None_vless_552
+  type: vless
+  server: 104.24.226.143
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: United States_vless_553
+  type: vless
+  server: 173.245.59.17
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: None_vless_554
+  type: vless
+  server: 104.17.2.38
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: None_vless_555
+  type: vless
+  server: 162.159.6.199
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: None_vless_556
+  type: vless
+  server: 141.101.113.239
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: United States_vless_557
+  type: vless
+  server: 172.64.173.200
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: None_vless_558
+  type: vless
+  server: 104.21.235.122
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: Costa Rica_vless_559
+  type: vless
+  server: 190.93.246.107
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: Netherlands_vless_560
+  type: vless
+  server: 188.114.97.27
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: United States_vless_561
+  type: vless
+  server: 190.93.244.47
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: United States_vless_562
+  type: vless
+  server: 173.245.58.237
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: United States_vless_563
+  type: vless
+  server: 172.67.166.72
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: United States_vless_564
+  type: vless
+  server: 190.93.245.106
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: None_vless_565
+  type: vless
+  server: 104.27.107.221
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: United States_vless_566
+  type: vless
+  server: 103.21.244.137
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: None_vless_567
+  type: vless
+  server: 104.22.71.28
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: None_vless_568
+  type: vless
+  server: 104.17.123.53
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: None_vless_569
+  type: vless
+  server: 104.21.25.95
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: None_vless_570
+  type: vless
+  server: 104.24.190.226
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: None_vless_571
+  type: vless
+  server: 104.27.61.67
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: None_vless_572
+  type: vless
+  server: 104.24.171.195
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: France_vless_573
+  type: vless
+  server: 173.245.49.195
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: Costa Rica_vless_574
+  type: vless
+  server: 190.93.247.5
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: United States_vless_575
+  type: vless
+  server: 108.162.192.179
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: None_vless_576
+  type: vless
+  server: 198.41.216.62
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: None_vless_577
+  type: vless
+  server: 104.17.6.218
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: United States_vless_578
+  type: vless
+  server: 103.21.244.219
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: None_vless_579
+  type: vless
+  server: 141.101.121.69
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: None_vless_580
+  type: vless
+  server: 104.25.12.88
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: None_vless_581
+  type: vless
+  server: 104.24.74.248
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: None_vless_582
+  type: vless
+  server: 104.18.9.239
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: None_vless_583
+  type: vless
+  server: 104.16.247.95
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: None_vless_584
+  type: vless
+  server: 104.25.19.37
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: None_vless_585
+  type: vless
+  server: 104.18.238.119
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: None_vless_586
+  type: vless
+  server: 104.24.214.188
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: United States_vless_587
+  type: vless
+  server: 172.66.142.115
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: United States_vless_588
+  type: vless
+  server: 103.21.244.126
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: United States_vless_589
+  type: vless
+  server: 103.21.244.74
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: United States_vless_590
+  type: vless
+  server: 103.21.244.94
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: None_vless_591
+  type: vless
+  server: 104.20.87.76
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: None_vless_592
+  type: vless
+  server: 104.25.122.116
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: United States_vless_593
+  type: vless
+  server: 190.93.245.66
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: None_vless_594
+  type: vless
+  server: 104.18.23.136
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: None_vless_595
+  type: vless
+  server: 104.25.254.11
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: None_vless_596
+  type: vless
+  server: 104.25.94.175
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: None_vless_597
+  type: vless
+  server: 141.101.121.18
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: None_vless_598
+  type: vless
+  server: 162.159.133.78
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: United States_vless_599
+  type: vless
+  server: 173.245.59.173
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: Costa Rica_vless_5100
+  type: vless
+  server: 190.93.247.107
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: None_vless_5101
+  type: vless
+  server: 162.159.252.249
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: None_vless_5102
+  type: vless
+  server: 104.17.12.96
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: None_vless_5103
+  type: vless
+  server: 162.159.21.6
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: United States_vless_5104
+  type: vless
+  server: 103.21.244.125
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: None_vless_5105
+  type: vless
+  server: 104.16.137.106
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: United States_vless_5106
+  type: vless
+  server: 172.64.149.192
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: None_vless_5107
+  type: vless
+  server: 104.24.16.226
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: United States_vless_5108
+  type: vless
+  server: 172.67.103.221
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: Netherlands_vless_5109
+  type: vless
+  server: 188.114.97.111
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: United States_vless_5110
+  type: vless
+  server: 172.67.109.53
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: None_vless_5111
+  type: vless
+  server: 104.20.252.36
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: None_vless_5112
+  type: vless
+  server: 104.20.125.193
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: Netherlands_vless_5113
+  type: vless
+  server: 188.114.99.120
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: United States_vless_5114
+  type: vless
+  server: 108.162.193.37
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: None_vless_5115
+  type: vless
+  server: 104.17.103.194
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: None_vless_5116
+  type: vless
+  server: 198.41.200.139
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: Netherlands_vless_5117
+  type: vless
+  server: 188.114.97.222
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: Costa Rica_vless_5118
+  type: vless
+  server: 190.93.247.68
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: None_vless_5119
+  type: vless
+  server: 104.17.87.110
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: United States_vless_5120
+  type: vless
+  server: 172.67.155.77
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: None_vless_5121
+  type: vless
+  server: 162.159.26.15
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: None_vless_5122
+  type: vless
+  server: 198.41.217.152
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: None_vless_5123
+  type: vless
+  server: 104.18.244.225
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: United States_vless_5124
+  type: vless
+  server: 190.93.245.73
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: None_vless_5125
+  type: vless
+  server: 104.27.41.157
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: None_vless_5126
+  type: vless
+  server: 141.101.121.106
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: None_vless_5127
+  type: vless
+  server: 104.24.31.205
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: None_vless_5128
+  type: vless
+  server: 198.41.220.53
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: None_vless_5129
+  type: vless
+  server: 104.24.178.127
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: None_vless_5130
+  type: vless
+  server: 162.159.240.167
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: United States_vless_5131
+  type: vless
+  server: 103.21.244.141
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: United States_vless_5132
+  type: vless
+  server: 172.67.19.224
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: None_vless_5133
+  type: vless
+  server: 104.25.225.101
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: Netherlands_vless_5134
+  type: vless
+  server: 188.114.96.162
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: None_vless_5135
+  type: vless
+  server: 104.18.135.212
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: None_vless_5136
+  type: vless
+  server: 104.19.246.22
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: United States_vless_5137
+  type: vless
+  server: 172.64.164.162
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
 - name: Taiwan_hysteria_61
   type: hysteria
   server: www2.dtku48.xyz
@@ -125,17 +1762,16 @@ proxies:
   password: dongtaiwang.com
   sni: bing.com
   skip-cert-verify: true
-- name: Taiwan_hysteria_81
-  type: hysteria
-  server: www2.dtku48.xyz
-  port: 22334
-  auth-str: dongtaiwang.com
-  alpn:
-  - h3
-  protocol: udp
-  up: 11 Mbps
-  down: 55 Mbps
+- name: United States_hysteria2_81
+  type: hysteria2
+  server: 45.150.165.84
+  port: 8881
+  password: d017e316-82cb-441c-8eea-7b5e9de64a20
+  obfs: salamander
+  obfs-password: d017e316-82cb-441c-8eea-7b5e9de64a20
   skip-cert-verify: true
+  up: 2 Mbps
+  down: 10 Mbps
 - name: Taiwan_hysteria_91
   type: hysteria
   server: www.dtku50.xyz
@@ -165,8 +1801,8 @@ proxies:
 - name: United States_hy_1
   type: hysteria
   server: 173.234.25.52
-  port: 30072
-  ports: 30072
+  port: 48919
+  ports: 48919
   auth_str: dongtaiwang.com
   up: 80
   down: 100
@@ -176,11 +1812,11 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: United States_hy_2
+- name: Taiwan_hy_2
   type: hysteria
-  server: 108.181.22.239
-  port: 39967
-  ports: 39967
+  server: www.dtku40.xyz
+  port: 18490
+  ports: 18490
   auth_str: dongtaiwang.com
   up: 80
   down: 100
@@ -228,42 +1864,14 @@ proxies:
   fast-open: true
   sni: www.bing.com
   skip-cert-verify: true
-- name: United States_hy2_3
+- name: France_hy2_3
   type: hysteria2
-  server: 108.181.24.77
-  port: 43656
+  server: 51.159.77.198
+  port: 29277
   password: dongtaiwang.com
   fast-open: true
   sni: www.bing.com
   skip-cert-verify: true
-- name: France_reality_0
-  type: vless
-  server: 62.210.101.0
-  port: 18700
-  uuid: e659661d-8439-46e0-b1ab-d75ceaf73404
-  network: tcp
-  tls: true
-  udp: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  servername: update.microsoft
-  reality-opts:
-    public-key: PBRc2v9SSXpG4jjQRYNa-kgs8w9V4U3MNLuncd2d0hw
-    short-id: 6ba85179e30d4fc2
-- name: United States_reality_1
-  type: vless
-  server: 108.181.22.213
-  port: 28945
-  uuid: 9cc39477-0d85-4419-84d4-fb7fc77668b3
-  network: tcp
-  tls: true
-  udp: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  servername: m.media-amazon.com
-  reality-opts:
-    public-key: yKXmLTmXAi-BHBg3JpCz-NWUmVcKlfm7iMmVoq7YQx0
-    short-id: 6ba85179e30d4fc2
 - name: France_reality_2
   type: vless
   server: 62.210.101.0
@@ -278,19 +1886,19 @@ proxies:
   reality-opts:
     public-key: PBRc2v9SSXpG4jjQRYNa-kgs8w9V4U3MNLuncd2d0hw
     short-id: 6ba85179e30d4fc2
-- name: United States_reality_3
+- name: France_reality_3
   type: vless
-  server: 108.181.22.213
-  port: 28945
-  uuid: 9cc39477-0d85-4419-84d4-fb7fc77668b3
+  server: 62.210.101.0
+  port: 18700
+  uuid: e659661d-8439-46e0-b1ab-d75ceaf73404
   network: tcp
   tls: true
   udp: true
   flow: xtls-rprx-vision
   client-fingerprint: chrome
-  servername: m.media-amazon.com
+  servername: update.microsoft
   reality-opts:
-    public-key: yKXmLTmXAi-BHBg3JpCz-NWUmVcKlfm7iMmVoq7YQx0
+    public-key: PBRc2v9SSXpG4jjQRYNa-kgs8w9V4U3MNLuncd2d0hw
     short-id: 6ba85179e30d4fc2
 proxy-groups:
 - name: 🚀 节点选择
@@ -300,110 +1908,650 @@ proxy-groups:
   - ♻️ 自动选择
   - 🔯 故障转移
   - DIRECT
-  - United States_tuic_01
+  - United States_hysteria2_01
   - United States_tuic_11
-  - United States_tuic_21
-  - Hong Kong_vless_31
-  - Hong Kong_vless_41
-  - Hong Kong_vless_51
+  - Taiwan_vmess_12
+  - United States_vmess_21
+  - United States_tuic_31
+  - United States_vless_41
+  - None_vless_51
+  - None_vless_52
+  - United States_vless_53
+  - None_vless_54
+  - France_vless_55
+  - None_vless_56
+  - United States_vless_57
+  - None_vless_58
+  - None_vless_59
+  - None_vless_510
+  - United States_vless_511
+  - None_vless_512
+  - United States_vless_513
+  - None_vless_514
+  - None_vless_515
+  - Costa Rica_vless_516
+  - United States_vless_517
+  - None_vless_518
+  - None_vless_519
+  - None_vless_520
+  - United States_vless_521
+  - United States_vless_522
+  - United States_vless_523
+  - None_vless_524
+  - None_vless_525
+  - None_vless_526
+  - United States_vless_527
+  - None_vless_528
+  - Netherlands_vless_529
+  - None_vless_530
+  - None_vless_531
+  - None_vless_532
+  - None_vless_533
+  - None_vless_534
+  - None_vless_535
+  - None_vless_536
+  - United States_vless_537
+  - None_vless_538
+  - United States_vless_539
+  - None_vless_540
+  - None_vless_541
+  - None_vless_542
+  - United States_vless_543
+  - United States_vless_544
+  - None_vless_545
+  - Netherlands_vless_546
+  - United States_vless_547
+  - None_vless_548
+  - None_vless_549
+  - None_vless_550
+  - France_vless_551
+  - None_vless_552
+  - United States_vless_553
+  - None_vless_554
+  - None_vless_555
+  - None_vless_556
+  - United States_vless_557
+  - None_vless_558
+  - Costa Rica_vless_559
+  - Netherlands_vless_560
+  - United States_vless_561
+  - United States_vless_562
+  - United States_vless_563
+  - United States_vless_564
+  - None_vless_565
+  - United States_vless_566
+  - None_vless_567
+  - None_vless_568
+  - None_vless_569
+  - None_vless_570
+  - None_vless_571
+  - None_vless_572
+  - France_vless_573
+  - Costa Rica_vless_574
+  - United States_vless_575
+  - None_vless_576
+  - None_vless_577
+  - United States_vless_578
+  - None_vless_579
+  - None_vless_580
+  - None_vless_581
+  - None_vless_582
+  - None_vless_583
+  - None_vless_584
+  - None_vless_585
+  - None_vless_586
+  - United States_vless_587
+  - United States_vless_588
+  - United States_vless_589
+  - United States_vless_590
+  - None_vless_591
+  - None_vless_592
+  - United States_vless_593
+  - None_vless_594
+  - None_vless_595
+  - None_vless_596
+  - None_vless_597
+  - None_vless_598
+  - United States_vless_599
+  - Costa Rica_vless_5100
+  - None_vless_5101
+  - None_vless_5102
+  - None_vless_5103
+  - United States_vless_5104
+  - None_vless_5105
+  - United States_vless_5106
+  - None_vless_5107
+  - United States_vless_5108
+  - Netherlands_vless_5109
+  - United States_vless_5110
+  - None_vless_5111
+  - None_vless_5112
+  - Netherlands_vless_5113
+  - United States_vless_5114
+  - None_vless_5115
+  - None_vless_5116
+  - Netherlands_vless_5117
+  - Costa Rica_vless_5118
+  - None_vless_5119
+  - United States_vless_5120
+  - None_vless_5121
+  - None_vless_5122
+  - None_vless_5123
+  - United States_vless_5124
+  - None_vless_5125
+  - None_vless_5126
+  - None_vless_5127
+  - None_vless_5128
+  - None_vless_5129
+  - None_vless_5130
+  - United States_vless_5131
+  - United States_vless_5132
+  - None_vless_5133
+  - Netherlands_vless_5134
+  - None_vless_5135
+  - None_vless_5136
+  - United States_vless_5137
   - Taiwan_hysteria_61
   - France_hysteria2_71
-  - Taiwan_hysteria_81
+  - United States_hysteria2_81
   - Taiwan_hysteria_91
   - France_hy_0
   - United States_hy_1
-  - United States_hy_2
+  - Taiwan_hy_2
   - United States_hy_3
   - France_hy2_0
   - United States_hy2_1
   - France_hy2_2
-  - United States_hy2_3
-  - France_reality_0
-  - United States_reality_1
+  - France_hy2_3
   - France_reality_2
-  - United States_reality_3
+  - France_reality_3
 - name: WARP前置节点
   type: select
   proxies:
   - ♻️ 自动选择
   - 🔯 故障转移
-  - United States_tuic_01
+  - United States_hysteria2_01
   - United States_tuic_11
-  - United States_tuic_21
-  - Hong Kong_vless_31
-  - Hong Kong_vless_41
-  - Hong Kong_vless_51
+  - Taiwan_vmess_12
+  - United States_vmess_21
+  - United States_tuic_31
+  - United States_vless_41
+  - None_vless_51
+  - None_vless_52
+  - United States_vless_53
+  - None_vless_54
+  - France_vless_55
+  - None_vless_56
+  - United States_vless_57
+  - None_vless_58
+  - None_vless_59
+  - None_vless_510
+  - United States_vless_511
+  - None_vless_512
+  - United States_vless_513
+  - None_vless_514
+  - None_vless_515
+  - Costa Rica_vless_516
+  - United States_vless_517
+  - None_vless_518
+  - None_vless_519
+  - None_vless_520
+  - United States_vless_521
+  - United States_vless_522
+  - United States_vless_523
+  - None_vless_524
+  - None_vless_525
+  - None_vless_526
+  - United States_vless_527
+  - None_vless_528
+  - Netherlands_vless_529
+  - None_vless_530
+  - None_vless_531
+  - None_vless_532
+  - None_vless_533
+  - None_vless_534
+  - None_vless_535
+  - None_vless_536
+  - United States_vless_537
+  - None_vless_538
+  - United States_vless_539
+  - None_vless_540
+  - None_vless_541
+  - None_vless_542
+  - United States_vless_543
+  - United States_vless_544
+  - None_vless_545
+  - Netherlands_vless_546
+  - United States_vless_547
+  - None_vless_548
+  - None_vless_549
+  - None_vless_550
+  - France_vless_551
+  - None_vless_552
+  - United States_vless_553
+  - None_vless_554
+  - None_vless_555
+  - None_vless_556
+  - United States_vless_557
+  - None_vless_558
+  - Costa Rica_vless_559
+  - Netherlands_vless_560
+  - United States_vless_561
+  - United States_vless_562
+  - United States_vless_563
+  - United States_vless_564
+  - None_vless_565
+  - United States_vless_566
+  - None_vless_567
+  - None_vless_568
+  - None_vless_569
+  - None_vless_570
+  - None_vless_571
+  - None_vless_572
+  - France_vless_573
+  - Costa Rica_vless_574
+  - United States_vless_575
+  - None_vless_576
+  - None_vless_577
+  - United States_vless_578
+  - None_vless_579
+  - None_vless_580
+  - None_vless_581
+  - None_vless_582
+  - None_vless_583
+  - None_vless_584
+  - None_vless_585
+  - None_vless_586
+  - United States_vless_587
+  - United States_vless_588
+  - United States_vless_589
+  - United States_vless_590
+  - None_vless_591
+  - None_vless_592
+  - United States_vless_593
+  - None_vless_594
+  - None_vless_595
+  - None_vless_596
+  - None_vless_597
+  - None_vless_598
+  - United States_vless_599
+  - Costa Rica_vless_5100
+  - None_vless_5101
+  - None_vless_5102
+  - None_vless_5103
+  - United States_vless_5104
+  - None_vless_5105
+  - United States_vless_5106
+  - None_vless_5107
+  - United States_vless_5108
+  - Netherlands_vless_5109
+  - United States_vless_5110
+  - None_vless_5111
+  - None_vless_5112
+  - Netherlands_vless_5113
+  - United States_vless_5114
+  - None_vless_5115
+  - None_vless_5116
+  - Netherlands_vless_5117
+  - Costa Rica_vless_5118
+  - None_vless_5119
+  - United States_vless_5120
+  - None_vless_5121
+  - None_vless_5122
+  - None_vless_5123
+  - United States_vless_5124
+  - None_vless_5125
+  - None_vless_5126
+  - None_vless_5127
+  - None_vless_5128
+  - None_vless_5129
+  - None_vless_5130
+  - United States_vless_5131
+  - United States_vless_5132
+  - None_vless_5133
+  - Netherlands_vless_5134
+  - None_vless_5135
+  - None_vless_5136
+  - United States_vless_5137
   - Taiwan_hysteria_61
   - France_hysteria2_71
-  - Taiwan_hysteria_81
+  - United States_hysteria2_81
   - Taiwan_hysteria_91
   - France_hy_0
   - United States_hy_1
-  - United States_hy_2
+  - Taiwan_hy_2
   - United States_hy_3
   - France_hy2_0
   - United States_hy2_1
   - France_hy2_2
-  - United States_hy2_3
-  - France_reality_0
-  - United States_reality_1
+  - France_hy2_3
   - France_reality_2
-  - United States_reality_3
+  - France_reality_3
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
-  - United States_tuic_01
+  - United States_hysteria2_01
   - United States_tuic_11
-  - United States_tuic_21
-  - Hong Kong_vless_31
-  - Hong Kong_vless_41
-  - Hong Kong_vless_51
+  - Taiwan_vmess_12
+  - United States_vmess_21
+  - United States_tuic_31
+  - United States_vless_41
+  - None_vless_51
+  - None_vless_52
+  - United States_vless_53
+  - None_vless_54
+  - France_vless_55
+  - None_vless_56
+  - United States_vless_57
+  - None_vless_58
+  - None_vless_59
+  - None_vless_510
+  - United States_vless_511
+  - None_vless_512
+  - United States_vless_513
+  - None_vless_514
+  - None_vless_515
+  - Costa Rica_vless_516
+  - United States_vless_517
+  - None_vless_518
+  - None_vless_519
+  - None_vless_520
+  - United States_vless_521
+  - United States_vless_522
+  - United States_vless_523
+  - None_vless_524
+  - None_vless_525
+  - None_vless_526
+  - United States_vless_527
+  - None_vless_528
+  - Netherlands_vless_529
+  - None_vless_530
+  - None_vless_531
+  - None_vless_532
+  - None_vless_533
+  - None_vless_534
+  - None_vless_535
+  - None_vless_536
+  - United States_vless_537
+  - None_vless_538
+  - United States_vless_539
+  - None_vless_540
+  - None_vless_541
+  - None_vless_542
+  - United States_vless_543
+  - United States_vless_544
+  - None_vless_545
+  - Netherlands_vless_546
+  - United States_vless_547
+  - None_vless_548
+  - None_vless_549
+  - None_vless_550
+  - France_vless_551
+  - None_vless_552
+  - United States_vless_553
+  - None_vless_554
+  - None_vless_555
+  - None_vless_556
+  - United States_vless_557
+  - None_vless_558
+  - Costa Rica_vless_559
+  - Netherlands_vless_560
+  - United States_vless_561
+  - United States_vless_562
+  - United States_vless_563
+  - United States_vless_564
+  - None_vless_565
+  - United States_vless_566
+  - None_vless_567
+  - None_vless_568
+  - None_vless_569
+  - None_vless_570
+  - None_vless_571
+  - None_vless_572
+  - France_vless_573
+  - Costa Rica_vless_574
+  - United States_vless_575
+  - None_vless_576
+  - None_vless_577
+  - United States_vless_578
+  - None_vless_579
+  - None_vless_580
+  - None_vless_581
+  - None_vless_582
+  - None_vless_583
+  - None_vless_584
+  - None_vless_585
+  - None_vless_586
+  - United States_vless_587
+  - United States_vless_588
+  - United States_vless_589
+  - United States_vless_590
+  - None_vless_591
+  - None_vless_592
+  - United States_vless_593
+  - None_vless_594
+  - None_vless_595
+  - None_vless_596
+  - None_vless_597
+  - None_vless_598
+  - United States_vless_599
+  - Costa Rica_vless_5100
+  - None_vless_5101
+  - None_vless_5102
+  - None_vless_5103
+  - United States_vless_5104
+  - None_vless_5105
+  - United States_vless_5106
+  - None_vless_5107
+  - United States_vless_5108
+  - Netherlands_vless_5109
+  - United States_vless_5110
+  - None_vless_5111
+  - None_vless_5112
+  - Netherlands_vless_5113
+  - United States_vless_5114
+  - None_vless_5115
+  - None_vless_5116
+  - Netherlands_vless_5117
+  - Costa Rica_vless_5118
+  - None_vless_5119
+  - United States_vless_5120
+  - None_vless_5121
+  - None_vless_5122
+  - None_vless_5123
+  - United States_vless_5124
+  - None_vless_5125
+  - None_vless_5126
+  - None_vless_5127
+  - None_vless_5128
+  - None_vless_5129
+  - None_vless_5130
+  - United States_vless_5131
+  - United States_vless_5132
+  - None_vless_5133
+  - Netherlands_vless_5134
+  - None_vless_5135
+  - None_vless_5136
+  - United States_vless_5137
   - Taiwan_hysteria_61
   - France_hysteria2_71
-  - Taiwan_hysteria_81
+  - United States_hysteria2_81
   - Taiwan_hysteria_91
   - France_hy_0
   - United States_hy_1
-  - United States_hy_2
+  - Taiwan_hy_2
   - United States_hy_3
   - France_hy2_0
   - United States_hy2_1
   - France_hy2_2
-  - United States_hy2_3
-  - France_reality_0
-  - United States_reality_1
+  - France_hy2_3
   - France_reality_2
-  - United States_reality_3
+  - France_reality_3
 - name: 🔯 故障转移
   type: fallback
   url: http://www.gstatic.com/generate_204
   interval: 120
   proxies:
-  - United States_tuic_01
+  - United States_hysteria2_01
   - United States_tuic_11
-  - United States_tuic_21
-  - Hong Kong_vless_31
-  - Hong Kong_vless_41
-  - Hong Kong_vless_51
+  - Taiwan_vmess_12
+  - United States_vmess_21
+  - United States_tuic_31
+  - United States_vless_41
+  - None_vless_51
+  - None_vless_52
+  - United States_vless_53
+  - None_vless_54
+  - France_vless_55
+  - None_vless_56
+  - United States_vless_57
+  - None_vless_58
+  - None_vless_59
+  - None_vless_510
+  - United States_vless_511
+  - None_vless_512
+  - United States_vless_513
+  - None_vless_514
+  - None_vless_515
+  - Costa Rica_vless_516
+  - United States_vless_517
+  - None_vless_518
+  - None_vless_519
+  - None_vless_520
+  - United States_vless_521
+  - United States_vless_522
+  - United States_vless_523
+  - None_vless_524
+  - None_vless_525
+  - None_vless_526
+  - United States_vless_527
+  - None_vless_528
+  - Netherlands_vless_529
+  - None_vless_530
+  - None_vless_531
+  - None_vless_532
+  - None_vless_533
+  - None_vless_534
+  - None_vless_535
+  - None_vless_536
+  - United States_vless_537
+  - None_vless_538
+  - United States_vless_539
+  - None_vless_540
+  - None_vless_541
+  - None_vless_542
+  - United States_vless_543
+  - United States_vless_544
+  - None_vless_545
+  - Netherlands_vless_546
+  - United States_vless_547
+  - None_vless_548
+  - None_vless_549
+  - None_vless_550
+  - France_vless_551
+  - None_vless_552
+  - United States_vless_553
+  - None_vless_554
+  - None_vless_555
+  - None_vless_556
+  - United States_vless_557
+  - None_vless_558
+  - Costa Rica_vless_559
+  - Netherlands_vless_560
+  - United States_vless_561
+  - United States_vless_562
+  - United States_vless_563
+  - United States_vless_564
+  - None_vless_565
+  - United States_vless_566
+  - None_vless_567
+  - None_vless_568
+  - None_vless_569
+  - None_vless_570
+  - None_vless_571
+  - None_vless_572
+  - France_vless_573
+  - Costa Rica_vless_574
+  - United States_vless_575
+  - None_vless_576
+  - None_vless_577
+  - United States_vless_578
+  - None_vless_579
+  - None_vless_580
+  - None_vless_581
+  - None_vless_582
+  - None_vless_583
+  - None_vless_584
+  - None_vless_585
+  - None_vless_586
+  - United States_vless_587
+  - United States_vless_588
+  - United States_vless_589
+  - United States_vless_590
+  - None_vless_591
+  - None_vless_592
+  - United States_vless_593
+  - None_vless_594
+  - None_vless_595
+  - None_vless_596
+  - None_vless_597
+  - None_vless_598
+  - United States_vless_599
+  - Costa Rica_vless_5100
+  - None_vless_5101
+  - None_vless_5102
+  - None_vless_5103
+  - United States_vless_5104
+  - None_vless_5105
+  - United States_vless_5106
+  - None_vless_5107
+  - United States_vless_5108
+  - Netherlands_vless_5109
+  - United States_vless_5110
+  - None_vless_5111
+  - None_vless_5112
+  - Netherlands_vless_5113
+  - United States_vless_5114
+  - None_vless_5115
+  - None_vless_5116
+  - Netherlands_vless_5117
+  - Costa Rica_vless_5118
+  - None_vless_5119
+  - United States_vless_5120
+  - None_vless_5121
+  - None_vless_5122
+  - None_vless_5123
+  - United States_vless_5124
+  - None_vless_5125
+  - None_vless_5126
+  - None_vless_5127
+  - None_vless_5128
+  - None_vless_5129
+  - None_vless_5130
+  - United States_vless_5131
+  - United States_vless_5132
+  - None_vless_5133
+  - Netherlands_vless_5134
+  - None_vless_5135
+  - None_vless_5136
+  - United States_vless_5137
   - Taiwan_hysteria_61
   - France_hysteria2_71
-  - Taiwan_hysteria_81
+  - United States_hysteria2_81
   - Taiwan_hysteria_91
   - France_hy_0
   - United States_hy_1
-  - United States_hy_2
+  - Taiwan_hy_2
   - United States_hy_3
   - France_hy2_0
   - United States_hy2_1
   - France_hy2_2
-  - United States_hy2_3
-  - France_reality_0
-  - United States_reality_1
+  - France_hy2_3
   - France_reality_2
-  - United States_reality_3
+  - France_reality_3
 - name: 🎯 全球直连
   type: select
   proxies:
@@ -422,28 +2570,163 @@ proxy-groups:
   - 🎯 全球直连
   - ♻️ 自动选择
   - 🔯 故障转移
-  - United States_tuic_01
+  - United States_hysteria2_01
   - United States_tuic_11
-  - United States_tuic_21
-  - Hong Kong_vless_31
-  - Hong Kong_vless_41
-  - Hong Kong_vless_51
+  - Taiwan_vmess_12
+  - United States_vmess_21
+  - United States_tuic_31
+  - United States_vless_41
+  - None_vless_51
+  - None_vless_52
+  - United States_vless_53
+  - None_vless_54
+  - France_vless_55
+  - None_vless_56
+  - United States_vless_57
+  - None_vless_58
+  - None_vless_59
+  - None_vless_510
+  - United States_vless_511
+  - None_vless_512
+  - United States_vless_513
+  - None_vless_514
+  - None_vless_515
+  - Costa Rica_vless_516
+  - United States_vless_517
+  - None_vless_518
+  - None_vless_519
+  - None_vless_520
+  - United States_vless_521
+  - United States_vless_522
+  - United States_vless_523
+  - None_vless_524
+  - None_vless_525
+  - None_vless_526
+  - United States_vless_527
+  - None_vless_528
+  - Netherlands_vless_529
+  - None_vless_530
+  - None_vless_531
+  - None_vless_532
+  - None_vless_533
+  - None_vless_534
+  - None_vless_535
+  - None_vless_536
+  - United States_vless_537
+  - None_vless_538
+  - United States_vless_539
+  - None_vless_540
+  - None_vless_541
+  - None_vless_542
+  - United States_vless_543
+  - United States_vless_544
+  - None_vless_545
+  - Netherlands_vless_546
+  - United States_vless_547
+  - None_vless_548
+  - None_vless_549
+  - None_vless_550
+  - France_vless_551
+  - None_vless_552
+  - United States_vless_553
+  - None_vless_554
+  - None_vless_555
+  - None_vless_556
+  - United States_vless_557
+  - None_vless_558
+  - Costa Rica_vless_559
+  - Netherlands_vless_560
+  - United States_vless_561
+  - United States_vless_562
+  - United States_vless_563
+  - United States_vless_564
+  - None_vless_565
+  - United States_vless_566
+  - None_vless_567
+  - None_vless_568
+  - None_vless_569
+  - None_vless_570
+  - None_vless_571
+  - None_vless_572
+  - France_vless_573
+  - Costa Rica_vless_574
+  - United States_vless_575
+  - None_vless_576
+  - None_vless_577
+  - United States_vless_578
+  - None_vless_579
+  - None_vless_580
+  - None_vless_581
+  - None_vless_582
+  - None_vless_583
+  - None_vless_584
+  - None_vless_585
+  - None_vless_586
+  - United States_vless_587
+  - United States_vless_588
+  - United States_vless_589
+  - United States_vless_590
+  - None_vless_591
+  - None_vless_592
+  - United States_vless_593
+  - None_vless_594
+  - None_vless_595
+  - None_vless_596
+  - None_vless_597
+  - None_vless_598
+  - United States_vless_599
+  - Costa Rica_vless_5100
+  - None_vless_5101
+  - None_vless_5102
+  - None_vless_5103
+  - United States_vless_5104
+  - None_vless_5105
+  - United States_vless_5106
+  - None_vless_5107
+  - United States_vless_5108
+  - Netherlands_vless_5109
+  - United States_vless_5110
+  - None_vless_5111
+  - None_vless_5112
+  - Netherlands_vless_5113
+  - United States_vless_5114
+  - None_vless_5115
+  - None_vless_5116
+  - Netherlands_vless_5117
+  - Costa Rica_vless_5118
+  - None_vless_5119
+  - United States_vless_5120
+  - None_vless_5121
+  - None_vless_5122
+  - None_vless_5123
+  - United States_vless_5124
+  - None_vless_5125
+  - None_vless_5126
+  - None_vless_5127
+  - None_vless_5128
+  - None_vless_5129
+  - None_vless_5130
+  - United States_vless_5131
+  - United States_vless_5132
+  - None_vless_5133
+  - Netherlands_vless_5134
+  - None_vless_5135
+  - None_vless_5136
+  - United States_vless_5137
   - Taiwan_hysteria_61
   - France_hysteria2_71
-  - Taiwan_hysteria_81
+  - United States_hysteria2_81
   - Taiwan_hysteria_91
   - France_hy_0
   - United States_hy_1
-  - United States_hy_2
+  - Taiwan_hy_2
   - United States_hy_3
   - France_hy2_0
   - United States_hy2_1
   - France_hy2_2
-  - United States_hy2_3
-  - France_reality_0
-  - United States_reality_1
+  - France_hy2_3
   - France_reality_2
-  - United States_reality_3
+  - France_reality_3
 rules:
 - DOMAIN-KEYWORD,outlook,🎯 全球直连
 - DOMAIN-KEYWORD,plateau,🎯 全球直连
