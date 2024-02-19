@@ -38,7 +38,7 @@ https://raw.githubusercontent.com/hlewis2000/chromego_merge/main/sub/shadowrocke
 ```
 ### sing-box订阅链接
 ```
-https://sbsub.henhao.cf/config/https://raw.githubusercontent.com/hlewis2000/chromego_merge/main/sub/shadowrocket_base64.txt/&file=2
+https://sbsub.17fq.eu.org/config/https://raw.githubusercontent.com/hlewis2000/chromego_merge/main/sub/shadowrocket_base64.txt/&file=2
 ```
 ```
 https://raw.githubusercontent.com/hlewis2000/chromego_merge/main/sub/sb.json
