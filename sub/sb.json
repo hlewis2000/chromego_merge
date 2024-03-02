@@ -90,6 +90,7 @@
       "outbounds": [
         "auto",
         "direct",
+        "uV62gy31_shadowsocks",
         "🇹🇼 Taiwan_hy_6",
         "🇫🇷 France_hy2_7",
         "🇺🇸 United States_vless_8",
@@ -102,7 +103,7 @@
         "🇺🇸 United States_hysteria2_1",
         "🇫🇷 France_hysteria2_2",
         "🇫🇷 France_hysteria2_3",
-        "🇺🇸 United States_vless_1",
+        "None_vless_1",
         "🇫🇷 France_vless_2",
         "🇫🇷 France_vless_3"
       ]
@@ -291,7 +292,6 @@
         "🇺🇸 United States_hysteria_1",
         "🇺🇸 United States_hysteria_3",
         "🇺🇸 United States_hysteria2_1",
-        "🇺🇸 United States_vless_1",
         "proxy"
       ]
     },
@@ -299,11 +299,13 @@
       "tag": "✈️ 其他节点",
       "type": "selector",
       "outbounds": [
+        "uV62gy31_shadowsocks",
         "🇫🇷 France_hy2_7",
         "🇫🇷 France_hysteria_0",
         "🇫🇷 France_hysteria2_0",
         "🇫🇷 France_hysteria2_2",
         "🇫🇷 France_hysteria2_3",
+        "None_vless_1",
         "🇫🇷 France_vless_2",
         "🇫🇷 France_vless_3",
         "proxy"
@@ -329,6 +331,7 @@
       "tag": "auto",
       "type": "urltest",
       "outbounds": [
+        "uV62gy31_shadowsocks",
         "🇹🇼 Taiwan_hy_6",
         "🇫🇷 France_hy2_7",
         "🇺🇸 United States_vless_8",
@@ -341,7 +344,7 @@
         "🇺🇸 United States_hysteria2_1",
         "🇫🇷 France_hysteria2_2",
         "🇫🇷 France_hysteria2_3",
-        "🇺🇸 United States_vless_1",
+        "None_vless_1",
         "🇫🇷 France_vless_2",
         "🇫🇷 France_vless_3"
       ],
@@ -360,6 +363,14 @@
     {
       "type": "block",
       "tag": "block"
+    },
+    {
+      "tag": "uV62gy31_shadowsocks",
+      "type": "shadowsocks",
+      "server": "208.115.233.85",
+      "server_port": 443,
+      "method": "2022-blake3-chacha20-poly1305",
+      "password": "Sq2/krOMh2iWHdx2sntvbdEa4MgLTbei0N9ffvucEy0="
     },
     {
       "tag": "🇹🇼 Taiwan_hy_6",
@@ -557,7 +568,7 @@
       "tag": "🇫🇷 France_hysteria2_3",
       "type": "hysteria2",
       "server": "51.159.77.198",
-      "server_port": 29277,
+      "server_port": 53967,
       "password": "dongtaiwang.com",
       "up_mbps": 10,
       "down_mbps": 100,
@@ -571,7 +582,7 @@
       }
     },
     {
-      "tag": "🇺🇸 United States_vless_1",
+      "tag": "None_vless_1",
       "type": "vless",
       "server": "yh1.dtku41.xyz",
       "server_port": 443,
