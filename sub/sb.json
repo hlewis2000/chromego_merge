@@ -90,7 +90,6 @@
       "outbounds": [
         "auto",
         "direct",
-        "uV62gy31_shadowsocks",
         "🇹🇼 Taiwan_hy_6",
         "🇫🇷 France_hy2_7",
         "🇺🇸 United States_vless_8",
@@ -299,7 +298,6 @@
       "tag": "✈️ 其他节点",
       "type": "selector",
       "outbounds": [
-        "uV62gy31_shadowsocks",
         "🇫🇷 France_hy2_7",
         "🇫🇷 France_hysteria_0",
         "🇫🇷 France_hysteria2_0",
@@ -331,7 +329,6 @@
       "tag": "auto",
       "type": "urltest",
       "outbounds": [
-        "uV62gy31_shadowsocks",
         "🇹🇼 Taiwan_hy_6",
         "🇫🇷 France_hy2_7",
         "🇺🇸 United States_vless_8",
@@ -363,14 +360,6 @@
     {
       "type": "block",
       "tag": "block"
-    },
-    {
-      "tag": "uV62gy31_shadowsocks",
-      "type": "shadowsocks",
-      "server": "208.115.233.85",
-      "server_port": 443,
-      "method": "2022-blake3-chacha20-poly1305",
-      "password": "Sq2/krOMh2iWHdx2sntvbdEa4MgLTbei0N9ffvucEy0="
     },
     {
       "tag": "🇹🇼 Taiwan_hy_6",
