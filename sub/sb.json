@@ -92,7 +92,7 @@
         "direct",
         "🇹🇼 Taiwan_hy_6",
         "🇫🇷 France_hy2_7",
-        "🇺🇸 United States_vless_8",
+        "OIaU7DXH_shadowsocks",
         "🇹🇼 Taiwan_hy_9",
         "🇫🇷 France_hysteria_0",
         "🇺🇸 United States_hysteria_1",
@@ -103,8 +103,8 @@
         "🇫🇷 France_hysteria2_2",
         "🇫🇷 France_hysteria2_3",
         "None_vless_1",
-        "🇫🇷 France_vless_2",
-        "🇫🇷 France_vless_3"
+        "🇨🇦 Canada_vless_2",
+        "None_vless_3"
       ]
     },
     {
@@ -287,7 +287,6 @@
       "tag": "🇺🇸 美国节点",
       "type": "selector",
       "outbounds": [
-        "🇺🇸 United States_vless_8",
         "🇺🇸 United States_hysteria_1",
         "🇺🇸 United States_hysteria_3",
         "🇺🇸 United States_hysteria2_1",
@@ -299,13 +298,14 @@
       "type": "selector",
       "outbounds": [
         "🇫🇷 France_hy2_7",
+        "OIaU7DXH_shadowsocks",
         "🇫🇷 France_hysteria_0",
         "🇫🇷 France_hysteria2_0",
         "🇫🇷 France_hysteria2_2",
         "🇫🇷 France_hysteria2_3",
         "None_vless_1",
-        "🇫🇷 France_vless_2",
-        "🇫🇷 France_vless_3",
+        "🇨🇦 Canada_vless_2",
+        "None_vless_3",
         "proxy"
       ]
     },
@@ -331,7 +331,7 @@
       "outbounds": [
         "🇹🇼 Taiwan_hy_6",
         "🇫🇷 France_hy2_7",
-        "🇺🇸 United States_vless_8",
+        "OIaU7DXH_shadowsocks",
         "🇹🇼 Taiwan_hy_9",
         "🇫🇷 France_hysteria_0",
         "🇺🇸 United States_hysteria_1",
@@ -342,8 +342,8 @@
         "🇫🇷 France_hysteria2_2",
         "🇫🇷 France_hysteria2_3",
         "None_vless_1",
-        "🇫🇷 France_vless_2",
-        "🇫🇷 France_vless_3"
+        "🇨🇦 Canada_vless_2",
+        "None_vless_3"
       ],
       "url": "http://www.gstatic.com/generate_204",
       "interval": "10m",
@@ -396,26 +396,12 @@
       }
     },
     {
-      "tag": "🇺🇸 United States_vless_8",
-      "type": "vless",
-      "server": "45.145.72.212",
-      "server_port": 11223,
-      "uuid": "34d7aac1-fac7-4e17-b41e-5be028d286cd",
-      "packet_encoding": "xudp",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "insecure": true,
-        "server_name": "addons.mozilla.org",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "u24pYS0RqtYk8NBqtg4NIHUZIA0HmwuYw2RBIyt0T0c"
-        }
-      }
+      "tag": "OIaU7DXH_shadowsocks",
+      "type": "shadowsocks",
+      "server": "62.204.54.81",
+      "server_port": 44550,
+      "method": "2022-blake3-chacha20-poly1305",
+      "password": "5IH4rBauUuOT4VpAshgMPMSQ3Tf+oJjDY/jEDbIel2Q="
     },
     {
       "tag": "🇹🇼 Taiwan_hy_9",
@@ -595,48 +581,50 @@
       }
     },
     {
-      "tag": "🇫🇷 France_vless_2",
+      "tag": "🇨🇦 Canada_vless_2",
       "type": "vless",
-      "server": "62.210.101.0",
-      "server_port": 18700,
-      "uuid": "e659661d-8439-46e0-b1ab-d75ceaf73404",
+      "server": "23.227.39.88",
+      "server_port": 443,
+      "uuid": "ebfdccb6-7416-4b6e-860d-98587344d500",
       "packet_encoding": "xudp",
-      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
         "insecure": false,
-        "server_name": "update.microsoft",
+        "server_name": "lg1.freessr2.xyz",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "PBRc2v9SSXpG4jjQRYNa-kgs8w9V4U3MNLuncd2d0hw",
-          "short_id": "6ba85179e30d4fc2"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/xyakws",
+        "headers": {
+          "Host": "lg1.freessr2.xyz"
         }
       }
     },
     {
-      "tag": "🇫🇷 France_vless_3",
+      "tag": "None_vless_3",
       "type": "vless",
-      "server": "62.210.101.0",
-      "server_port": 18700,
-      "uuid": "e659661d-8439-46e0-b1ab-d75ceaf73404",
+      "server": "fbi.gov",
+      "server_port": 443,
+      "uuid": "ebfdccb6-7416-4b6e-860d-98587344d500",
       "packet_encoding": "xudp",
-      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
         "insecure": false,
-        "server_name": "update.microsoft",
+        "server_name": "lg1.freessr2.xyz",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "PBRc2v9SSXpG4jjQRYNa-kgs8w9V4U3MNLuncd2d0hw",
-          "short_id": "6ba85179e30d4fc2"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/xyakws",
+        "headers": {
+          "Host": "lg1.freessr2.xyz"
         }
       }
     }
