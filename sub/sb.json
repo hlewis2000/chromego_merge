@@ -93,7 +93,7 @@
         "🇺🇸 United States_tuic_2",
         "🇹🇼 Taiwan_hy_6",
         "🇫🇷 France_hy2_7",
-        "Wpq5B079_shadowsocks",
+        "SfbMiNQU_shadowsocks",
         "🇹🇼 Taiwan_hy_9",
         "🇫🇷 France_hysteria_0",
         "🇺🇸 United States_hysteria_1",
@@ -301,7 +301,7 @@
       "type": "selector",
       "outbounds": [
         "🇫🇷 France_hy2_7",
-        "Wpq5B079_shadowsocks",
+        "SfbMiNQU_shadowsocks",
         "🇫🇷 France_hysteria_0",
         "🇫🇷 France_hysteria2_0",
         "🇫🇷 France_hysteria2_2",
@@ -334,7 +334,7 @@
         "🇺🇸 United States_tuic_2",
         "🇹🇼 Taiwan_hy_6",
         "🇫🇷 France_hy2_7",
-        "Wpq5B079_shadowsocks",
+        "SfbMiNQU_shadowsocks",
         "🇹🇼 Taiwan_hy_9",
         "🇫🇷 France_hysteria_0",
         "🇺🇸 United States_hysteria_1",
@@ -417,7 +417,7 @@
       }
     },
     {
-      "tag": "Wpq5B079_shadowsocks",
+      "tag": "SfbMiNQU_shadowsocks",
       "type": "shadowsocks",
       "server": "62.204.54.81",
       "server_port": 44550,
