@@ -93,7 +93,7 @@
         "🇺🇸 United States_tuic_2",
         "🇹🇼 Taiwan_hy_6",
         "🇫🇷 France_hy2_7",
-        "SfbMiNQU_shadowsocks",
+        "LpZik5Uf_shadowsocks",
         "🇹🇼 Taiwan_hy_9",
         "🇫🇷 France_hysteria_0",
         "🇺🇸 United States_hysteria_1",
@@ -103,7 +103,7 @@
         "🇺🇸 United States_hysteria2_1",
         "🇫🇷 France_hysteria2_2",
         "🇫🇷 France_hysteria2_3",
-        "None_vless_1",
+        "🇺🇸 United States_vless_1",
         "🇺🇸 United States_vless_2",
         "None_vless_3"
       ]
@@ -292,6 +292,7 @@
         "🇺🇸 United States_hysteria_1",
         "🇺🇸 United States_hysteria_3",
         "🇺🇸 United States_hysteria2_1",
+        "🇺🇸 United States_vless_1",
         "🇺🇸 United States_vless_2",
         "proxy"
       ]
@@ -301,12 +302,11 @@
       "type": "selector",
       "outbounds": [
         "🇫🇷 France_hy2_7",
-        "SfbMiNQU_shadowsocks",
+        "LpZik5Uf_shadowsocks",
         "🇫🇷 France_hysteria_0",
         "🇫🇷 France_hysteria2_0",
         "🇫🇷 France_hysteria2_2",
         "🇫🇷 France_hysteria2_3",
-        "None_vless_1",
         "None_vless_3",
         "proxy"
       ]
@@ -334,7 +334,7 @@
         "🇺🇸 United States_tuic_2",
         "🇹🇼 Taiwan_hy_6",
         "🇫🇷 France_hy2_7",
-        "SfbMiNQU_shadowsocks",
+        "LpZik5Uf_shadowsocks",
         "🇹🇼 Taiwan_hy_9",
         "🇫🇷 France_hysteria_0",
         "🇺🇸 United States_hysteria_1",
@@ -344,7 +344,7 @@
         "🇺🇸 United States_hysteria2_1",
         "🇫🇷 France_hysteria2_2",
         "🇫🇷 France_hysteria2_3",
-        "None_vless_1",
+        "🇺🇸 United States_vless_1",
         "🇺🇸 United States_vless_2",
         "None_vless_3"
       ],
@@ -417,7 +417,7 @@
       }
     },
     {
-      "tag": "SfbMiNQU_shadowsocks",
+      "tag": "LpZik5Uf_shadowsocks",
       "type": "shadowsocks",
       "server": "62.204.54.81",
       "server_port": 44550,
@@ -578,7 +578,7 @@
       }
     },
     {
-      "tag": "None_vless_1",
+      "tag": "🇺🇸 United States_vless_1",
       "type": "vless",
       "server": "yh1.dtku41.xyz",
       "server_port": 443,
