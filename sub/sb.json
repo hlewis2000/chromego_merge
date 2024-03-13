@@ -90,10 +90,9 @@
       "outbounds": [
         "auto",
         "direct",
-        "🇺🇸 United States_tuic_2",
         "🇹🇼 Taiwan_hy_6",
         "🇫🇷 France_hy2_7",
-        "LpZik5Uf_shadowsocks",
+        "PklYnCGX_shadowsocks",
         "🇹🇼 Taiwan_hy_9",
         "🇫🇷 France_hysteria_0",
         "🇺🇸 United States_hysteria_1",
@@ -103,8 +102,8 @@
         "🇺🇸 United States_hysteria2_1",
         "🇫🇷 France_hysteria2_2",
         "🇫🇷 France_hysteria2_3",
-        "🇺🇸 United States_vless_1",
-        "🇺🇸 United States_vless_2",
+        "None_vless_1",
+        "None_vless_2",
         "None_vless_3"
       ]
     },
@@ -288,12 +287,9 @@
       "tag": "🇺🇸 美国节点",
       "type": "selector",
       "outbounds": [
-        "🇺🇸 United States_tuic_2",
         "🇺🇸 United States_hysteria_1",
         "🇺🇸 United States_hysteria_3",
         "🇺🇸 United States_hysteria2_1",
-        "🇺🇸 United States_vless_1",
-        "🇺🇸 United States_vless_2",
         "proxy"
       ]
     },
@@ -302,11 +298,13 @@
       "type": "selector",
       "outbounds": [
         "🇫🇷 France_hy2_7",
-        "LpZik5Uf_shadowsocks",
+        "PklYnCGX_shadowsocks",
         "🇫🇷 France_hysteria_0",
         "🇫🇷 France_hysteria2_0",
         "🇫🇷 France_hysteria2_2",
         "🇫🇷 France_hysteria2_3",
+        "None_vless_1",
+        "None_vless_2",
         "None_vless_3",
         "proxy"
       ]
@@ -331,10 +329,9 @@
       "tag": "auto",
       "type": "urltest",
       "outbounds": [
-        "🇺🇸 United States_tuic_2",
         "🇹🇼 Taiwan_hy_6",
         "🇫🇷 France_hy2_7",
-        "LpZik5Uf_shadowsocks",
+        "PklYnCGX_shadowsocks",
         "🇹🇼 Taiwan_hy_9",
         "🇫🇷 France_hysteria_0",
         "🇺🇸 United States_hysteria_1",
@@ -344,8 +341,8 @@
         "🇺🇸 United States_hysteria2_1",
         "🇫🇷 France_hysteria2_2",
         "🇫🇷 France_hysteria2_3",
-        "🇺🇸 United States_vless_1",
-        "🇺🇸 United States_vless_2",
+        "None_vless_1",
+        "None_vless_2",
         "None_vless_3"
       ],
       "url": "http://www.gstatic.com/generate_204",
@@ -363,24 +360,6 @@
     {
       "type": "block",
       "tag": "block"
-    },
-    {
-      "tag": "🇺🇸 United States_tuic_2",
-      "type": "tuic",
-      "server": "64.31.55.18",
-      "server_port": 11223,
-      "uuid": "1a0a455e-4207-44be-b5a0-062747671570",
-      "password": "dongtaiwang.com",
-      "congestion_control": "bbr",
-      "udp_relay_mode": "native",
-      "zero_rtt_handshake": false,
-      "heartbeat": "10s",
-      "tls": {
-        "enabled": true,
-        "alpn": [
-          "h3"
-        ]
-      }
     },
     {
       "tag": "🇹🇼 Taiwan_hy_6",
@@ -417,7 +396,7 @@
       }
     },
     {
-      "tag": "LpZik5Uf_shadowsocks",
+      "tag": "PklYnCGX_shadowsocks",
       "type": "shadowsocks",
       "server": "62.204.54.81",
       "server_port": 44550,
@@ -578,7 +557,7 @@
       }
     },
     {
-      "tag": "🇺🇸 United States_vless_1",
+      "tag": "None_vless_1",
       "type": "vless",
       "server": "yh1.dtku41.xyz",
       "server_port": 443,
@@ -602,7 +581,7 @@
       }
     },
     {
-      "tag": "🇺🇸 United States_vless_2",
+      "tag": "None_vless_2",
       "type": "vless",
       "server": "yh6.dtku41.xyz",
       "server_port": 443,
