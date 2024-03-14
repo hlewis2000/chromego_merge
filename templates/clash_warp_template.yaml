@@ -12,7 +12,7 @@ proxies:
     port: 988
     ip: 172.16.0.2
     ipv6: 2606:4700:110:8a26:64c1:d332:da1:6932/128
-    private-key: iHa8N0kMCzJbBDN5VWWQOhdF+GPu4pmOqTC8j40mIFQ=
+    private-key: eLuB8Bfj/ivHAiKdnjf3XnQ8EASWfPvvSOnlYZ/y63k=
     public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
     udp: true
     reserved: [0,0,0]
