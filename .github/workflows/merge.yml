@@ -6,7 +6,7 @@ on:
   #     - main  # 替换为你的默认分支
   schedule:
     # - cron: '0 0,3,13 * * *'  # 每6h一次
-    - cron: '0 3 * * *'
+    # - cron: '0 3 * * *'
     
   workflow_dispatch:  # 触发手动事件
 jobs:
